@@ -1,0 +1,966 @@
+2025-08-29 16:08:45.852 INFO:   [main] io.micronaut.context.env.DefaultEnvironment.<init>() Established active environments: [k8s, cloud, ec2]
+2025-08-29 16:08:46.592 INFO:   [main] io.micronaut.runtime.Micronaut.lambda$start$2() Startup completed in 1531ms. Server Running: http://esra-0:80
+2025-08-29 16:08:46.703 INFO:   [main] com.caweco.esra.business.properties.ApplicationPropertyProvider.readProperties() Loaded 34 settings from config file /storage/esra.properties.
+2025-08-29 16:08:46.709 INFO:   [main] com.caweco.esra.storageserver.Application.main() Default SSLContext has been changed to custom.
+2025-08-29 16:08:46.878 INFO:   [main] one.microstream.util.logging.Logging.<clinit>() MicroStream Version 08.01.00-MS-GA
+2025-08-29 16:08:46.947 WARN:   [main] com.caweco.esra.microstream.DB.startDB() WARN: DEV mode, no rolling backup!
+2025-08-29 16:08:46.961 INFO:   [main] one.microstream.storage.embedded.types.EmbeddedStorageFoundation$Default.createEmbeddedStorageManager() Creating embedded storage manager
+2025-08-29 16:08:47.194 INFO:   [main] one.microstream.persistence.types.PersistenceTypeHandlerManager$Default.initialize() Initializing type handler manager
+2025-08-29 16:08:47.584 INFO:   [main] one.microstream.storage.embedded.types.EmbeddedStorageManager$Default.start() Starting embedded storage manager
+2025-08-29 16:08:47.584 INFO:   [main] one.microstream.storage.types.StorageSystem$Default.start() Starting storage system
+2025-08-29 16:08:47.858 INFO:   [main] one.microstream.storage.types.StorageStructureValidator$Default.validate() Storage structure validated successfully.
+2025-08-29 16:27:11.305 INFO:   [main] one.microstream.persistence.internal.LoggingLegacyTypeMappingResultor.createMappingResult() Legacy type mapping required for legacy type 
+    1000093:com.caweco.esra.business.aa.AuthorizationResources
+    to current type 
+    1000169:com.caweco.esra.business.aa.AuthorizationResources
+    Fields:
+    enum BACKENDACCESS -1.000--> enum BACKENDACCESS
+    enum CLIENTADMINCOMMON -1.000--> enum CLIENTADMINCOMMON
+    enum ESUACCESS -1.000--> enum ESUACCESS
+    enum SCREENINGSEARCH_OWN -1.000--> enum SCREENINGSEARCH_OWN
+    enum SCREENING_SERVICE_AUTOASSIGN -1.000--> enum SCREENING_SERVICE_AUTOASSIGN
+    enum SCREENINGSEARCH_SERVICEREQUESTED -1.000--> enum SCREENINGSEARCH_SERVICEREQUESTED
+    enum SCREENINGSEARCH_ALL -1.000--> enum SCREENINGSEARCH_ALL
+    enum BUSINESSINFORMATION_ACCESS -1.000--> enum BUSINESSINFORMATION_ACCESS
+    enum TRADESANCTION_ACCESS -1.000--> enum TRADESANCTION_ACCESS
+    enum FINANCIALSANCTION_ACCESS -1.000--> enum FINANCIALSANCTION_ACCESS
+    java.lang.String java.lang.Enum#name -1.000--> java.lang.String java.lang.Enum#name
+    int java.lang.Enum#ordinal -1.000--> int java.lang.Enum#ordinal
+    java.lang.String com.caweco.esra.business.aa.AuthorizationResources#name -1.000--> java.lang.String com.caweco.esra.business.aa.AuthorizationResources#name
+    java.lang.String com.caweco.esra.business.aa.AuthorizationResources#description -1.000--> java.lang.String com.caweco.esra.business.aa.AuthorizationResources#description
+    com.rapidclipse.framework.security.authorization.Resource com.caweco.esra.business.aa.AuthorizationResources#resource -0.750--> java.lang.Object com.caweco.esra.business.aa.AuthorizationResources#resource
+2025-08-29 16:27:11.334 INFO:   [main] one.microstream.persistence.internal.LoggingLegacyTypeMappingResultor.createMappingResult() Legacy type mapping required for legacy type 
+    1000095:com.caweco.esra.entities.questionnaire.QuestionCategory
+    to current type 
+    1000192:com.caweco.esra.entities.questionnaire.QuestionCategory
+    Fields:
+      NEW    > java.util.UUID com.caweco.esra.entities.questionnaire.QuestionCategory#uid
+    int com.caweco.esra.entities.questionnaire.QuestionCategory#id -1.000--> int com.caweco.esra.entities.questionnaire.QuestionCategory#id
+    java.lang.String com.caweco.esra.entities.questionnaire.QuestionCategory#category -1.000--> java.lang.String com.caweco.esra.entities.questionnaire.QuestionCategory#category
+2025-08-29 16:27:11.336 INFO:   [main] one.microstream.persistence.internal.LoggingLegacyTypeMappingResultor.createMappingResult() Legacy type mapping required for legacy type 
+    1000096:com.caweco.esra.entities.questionnaire.MultiOptionQuestion
+    to current type 
+    1000191:com.caweco.esra.entities.questionnaire.MultiOptionQuestion
+    Fields:
+      NEW    > java.util.UUID com.caweco.esra.entities.questionnaire.Question#uid
+    java.lang.Integer com.caweco.esra.entities.questionnaire.Question#id -1.000--> java.lang.Integer com.caweco.esra.entities.questionnaire.Question#id
+    com.caweco.esra.entities.questionnaire.QuestionCategory com.caweco.esra.entities.questionnaire.Question#category -1.000--> com.caweco.esra.entities.questionnaire.QuestionCategory com.caweco.esra.entities.questionnaire.Question#category
+    java.lang.String com.caweco.esra.entities.questionnaire.Question#questionText -1.000--> java.lang.String com.caweco.esra.entities.questionnaire.Question#questionText
+    java.lang.String com.caweco.esra.entities.questionnaire.Question#helperText -1.000--> java.lang.String com.caweco.esra.entities.questionnaire.Question#helperText
+    java.lang.Boolean com.caweco.esra.entities.questionnaire.Question#active -1.000--> java.lang.Boolean com.caweco.esra.entities.questionnaire.Question#active
+    java.lang.Boolean com.caweco.esra.entities.questionnaire.Question#standard -1.000--> java.lang.Boolean com.caweco.esra.entities.questionnaire.Question#standard
+    com.caweco.esra.entities.questionnaire.Rule com.caweco.esra.entities.questionnaire.Question#rule -1.000--> com.caweco.esra.entities.questionnaire.Rule com.caweco.esra.entities.questionnaire.Question#rule
+    java.lang.String com.caweco.esra.entities.questionnaire.Question#instructionText -1.000--> java.lang.String com.caweco.esra.entities.questionnaire.Question#instructionText
+    java.util.List com.caweco.esra.entities.questionnaire.MultiOptionQuestion#values -1.000--> java.util.List com.caweco.esra.entities.questionnaire.MultiOptionQuestion#values
+2025-08-29 16:27:11.337 INFO:   [main] one.microstream.persistence.internal.LoggingLegacyTypeMappingResultor.createMappingResult() Legacy type mapping required for legacy type 
+    1000099:com.caweco.esra.entities.questionnaire.FreeTextQuestion
+    to current type 
+    1000190:com.caweco.esra.entities.questionnaire.FreeTextQuestion
+    Fields:
+      NEW    > java.util.UUID com.caweco.esra.entities.questionnaire.Question#uid
+    java.lang.Integer com.caweco.esra.entities.questionnaire.Question#id -1.000--> java.lang.Integer com.caweco.esra.entities.questionnaire.Question#id
+    com.caweco.esra.entities.questionnaire.QuestionCategory com.caweco.esra.entities.questionnaire.Question#category -1.000--> com.caweco.esra.entities.questionnaire.QuestionCategory com.caweco.esra.entities.questionnaire.Question#category
+    java.lang.String com.caweco.esra.entities.questionnaire.Question#questionText -1.000--> java.lang.String com.caweco.esra.entities.questionnaire.Question#questionText
+    java.lang.String com.caweco.esra.entities.questionnaire.Question#helperText -1.000--> java.lang.String com.caweco.esra.entities.questionnaire.Question#helperText
+    java.lang.Boolean com.caweco.esra.entities.questionnaire.Question#active -1.000--> java.lang.Boolean com.caweco.esra.entities.questionnaire.Question#active
+    java.lang.Boolean com.caweco.esra.entities.questionnaire.Question#standard -1.000--> java.lang.Boolean com.caweco.esra.entities.questionnaire.Question#standard
+    com.caweco.esra.entities.questionnaire.Rule com.caweco.esra.entities.questionnaire.Question#rule -1.000--> com.caweco.esra.entities.questionnaire.Rule com.caweco.esra.entities.questionnaire.Question#rule
+    java.lang.String com.caweco.esra.entities.questionnaire.Question#instructionText -1.000--> java.lang.String com.caweco.esra.entities.questionnaire.Question#instructionText
+2025-08-29 16:27:11.338 INFO:   [main] one.microstream.persistence.internal.LoggingLegacyTypeMappingResultor.createMappingResult() Legacy type mapping required for legacy type 
+    1000100:com.caweco.esra.entities.questionnaire.SingleOptionQuestion
+    to current type 
+    1000193:com.caweco.esra.entities.questionnaire.SingleOptionQuestion
+    Fields:
+      NEW    > java.util.UUID com.caweco.esra.entities.questionnaire.Question#uid
+    java.lang.Integer com.caweco.esra.entities.questionnaire.Question#id -1.000--> java.lang.Integer com.caweco.esra.entities.questionnaire.Question#id
+    com.caweco.esra.entities.questionnaire.QuestionCategory com.caweco.esra.entities.questionnaire.Question#category -1.000--> com.caweco.esra.entities.questionnaire.QuestionCategory com.caweco.esra.entities.questionnaire.Question#category
+    java.lang.String com.caweco.esra.entities.questionnaire.Question#questionText -1.000--> java.lang.String com.caweco.esra.entities.questionnaire.Question#questionText
+    java.lang.String com.caweco.esra.entities.questionnaire.Question#helperText -1.000--> java.lang.String com.caweco.esra.entities.questionnaire.Question#helperText
+    java.lang.Boolean com.caweco.esra.entities.questionnaire.Question#active -1.000--> java.lang.Boolean com.caweco.esra.entities.questionnaire.Question#active
+    java.lang.Boolean com.caweco.esra.entities.questionnaire.Question#standard -1.000--> java.lang.Boolean com.caweco.esra.entities.questionnaire.Question#standard
+    com.caweco.esra.entities.questionnaire.Rule com.caweco.esra.entities.questionnaire.Question#rule -1.000--> com.caweco.esra.entities.questionnaire.Rule com.caweco.esra.entities.questionnaire.Question#rule
+    java.lang.String com.caweco.esra.entities.questionnaire.Question#instructionText -1.000--> java.lang.String com.caweco.esra.entities.questionnaire.Question#instructionText
+    java.util.List com.caweco.esra.entities.questionnaire.SingleOptionQuestion#values -1.000--> java.util.List com.caweco.esra.entities.questionnaire.SingleOptionQuestion#values
+2025-08-29 16:27:11.338 INFO:   [main] one.microstream.persistence.internal.LoggingLegacyTypeMappingResultor.createMappingResult() Legacy type mapping required for legacy type 
+    1000101:com.caweco.esra.entities.questionnaire.DurationChooserQuestion
+    to current type 
+    1000189:com.caweco.esra.entities.questionnaire.DurationChooserQuestion
+    Fields:
+      NEW    > java.util.UUID com.caweco.esra.entities.questionnaire.Question#uid
+    java.lang.Integer com.caweco.esra.entities.questionnaire.Question#id -1.000--> java.lang.Integer com.caweco.esra.entities.questionnaire.Question#id
+    com.caweco.esra.entities.questionnaire.QuestionCategory com.caweco.esra.entities.questionnaire.Question#category -1.000--> com.caweco.esra.entities.questionnaire.QuestionCategory com.caweco.esra.entities.questionnaire.Question#category
+    java.lang.String com.caweco.esra.entities.questionnaire.Question#questionText -1.000--> java.lang.String com.caweco.esra.entities.questionnaire.Question#questionText
+    java.lang.String com.caweco.esra.entities.questionnaire.Question#helperText -1.000--> java.lang.String com.caweco.esra.entities.questionnaire.Question#helperText
+    java.lang.Boolean com.caweco.esra.entities.questionnaire.Question#active -1.000--> java.lang.Boolean com.caweco.esra.entities.questionnaire.Question#active
+    java.lang.Boolean com.caweco.esra.entities.questionnaire.Question#standard -1.000--> java.lang.Boolean com.caweco.esra.entities.questionnaire.Question#standard
+    com.caweco.esra.entities.questionnaire.Rule com.caweco.esra.entities.questionnaire.Question#rule -1.000--> com.caweco.esra.entities.questionnaire.Rule com.caweco.esra.entities.questionnaire.Question#rule
+    java.lang.String com.caweco.esra.entities.questionnaire.Question#instructionText -1.000--> java.lang.String com.caweco.esra.entities.questionnaire.Question#instructionText
+2025-08-29 16:27:11.347 INFO:   [main] one.microstream.persistence.internal.LoggingLegacyTypeMappingResultor.createMappingResult() Legacy type mapping required for legacy type 
+    1000105:com.caweco.esra.entities.core.Screening
+    to current type 
+    1000198:com.caweco.esra.entities.core.Screening
+    Fields:
+    java.util.UUID com.caweco.esra.entities.core.Screening#screeningID -1.000--> java.util.UUID com.caweco.esra.entities.core.Screening#screeningID
+    java.time.LocalDate com.caweco.esra.entities.core.Screening#screeningDate -1.000--> java.time.LocalDate com.caweco.esra.entities.core.Screening#screeningDate
+      NEW    > java.util.Optional com.caweco.esra.entities.core.Screening#screeningEsuDate
+      NEW    > java.util.Optional com.caweco.esra.entities.core.Screening#screeningPublishDate
+    com.caweco.esra.entities.User com.caweco.esra.entities.core.Screening#screeningOwner -1.000--> com.caweco.esra.entities.User com.caweco.esra.entities.core.Screening#screeningOwner
+    com.caweco.esra.entities.User com.caweco.esra.entities.core.Screening#screeningServiceUser -1.000--> com.caweco.esra.entities.User com.caweco.esra.entities.core.Screening#screeningServiceUser
+    java.lang.String com.caweco.esra.entities.core.Screening#name -1.000--> java.lang.String com.caweco.esra.entities.core.Screening#name
+    com.caweco.esra.entities.core.LineOfBusiness com.caweco.esra.entities.core.Screening#lineOfBusiness -1.000--> com.caweco.esra.entities.core.LineOfBusiness com.caweco.esra.entities.core.Screening#lineOfBusiness
+    com.caweco.esra.entities.core.OE com.caweco.esra.entities.core.Screening#oe -1.000--> com.caweco.esra.entities.core.OE com.caweco.esra.entities.core.Screening#oe
+    com.caweco.esra.entities.core.Function com.caweco.esra.entities.core.Screening#function -1.000--> com.caweco.esra.entities.core.Function com.caweco.esra.entities.core.Screening#function
+    com.caweco.esra.entities.core.ScreeningStatus com.caweco.esra.entities.core.Screening#status -1.000--> com.caweco.esra.entities.core.ScreeningStatus com.caweco.esra.entities.core.Screening#status
+    com.caweco.esra.entities.core.InternalWorkflowStatus com.caweco.esra.entities.core.Screening#workflowStatus -1.000--> com.caweco.esra.entities.core.InternalWorkflowStatus com.caweco.esra.entities.core.Screening#workflowStatus
+    com.caweco.esra.entities.core.Monitoring com.caweco.esra.entities.core.Screening#latestMonitoring -1.000--> com.caweco.esra.entities.core.Monitoring com.caweco.esra.entities.core.Screening#latestMonitoring
+    one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#watchlistCompanyEntries -0.942--> one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#newWatchlistCompanyEntries
+    one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#watchlistSearchEntriesGsss -0.948--> one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#newWatchlistSearchEntriesGsss
+    one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#vesselsSeaWeb -0.875--> one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#newVesselsSeaWeb
+    com.caweco.esra.entities.questionnaire.QuestionnaireResult com.caweco.esra.entities.core.Screening#tradeSanctionResult -1.000--> com.caweco.esra.entities.questionnaire.QuestionnaireResult com.caweco.esra.entities.core.Screening#tradeSanctionResult
+    com.caweco.esra.entities.questionnaire.QuestionnaireResult com.caweco.esra.entities.core.Screening#businessInformationResult -1.000--> com.caweco.esra.entities.questionnaire.QuestionnaireResult com.caweco.esra.entities.core.Screening#businessInformationResult
+    com.caweco.esra.entities.User com.caweco.esra.entities.core.Screening#esuWorker -1.000--> com.caweco.esra.entities.User com.caweco.esra.entities.core.Screening#esuWorker
+    java.lang.String com.caweco.esra.entities.core.Screening#ESUTemplateResult -1.000--> java.lang.String com.caweco.esra.entities.core.Screening#ESUTemplateResult
+    java.util.Set com.caweco.esra.entities.core.Screening#esuTags -1.000--> java.util.Set com.caweco.esra.entities.core.Screening#esuTags
+    java.util.Set com.caweco.esra.entities.core.Screening#esuCountries -1.000--> java.util.Set com.caweco.esra.entities.core.Screening#esuCountries
+      NEW    > java.util.Set com.caweco.esra.entities.core.Screening#prcCountries
+    one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#esuMessagesPublic -0.925--> one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#esuMessagesPublicNew
+    java.util.Map com.caweco.esra.entities.core.Screening#esuMessagesPrivate -1.000--> java.util.Map com.caweco.esra.entities.core.Screening#esuMessagesPrivate
+    java.util.Map com.caweco.esra.entities.core.Screening#esuMessageGroups -0.921--> java.util.Map com.caweco.esra.entities.core.Screening#esuMessageGroupsNew
+    one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#files -1.000--> one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#files
+      NEW    > boolean com.caweco.esra.entities.core.Screening#archived
+    java.time.Instant com.caweco.esra.entities.core.Screening#created -1.000--> java.time.Instant com.caweco.esra.entities.core.Screening#created
+    java.lang.String com.caweco.esra.entities.core.Screening#createdBy -1.000--> java.lang.String com.caweco.esra.entities.core.Screening#createdBy
+    java.time.Instant com.caweco.esra.entities.core.Screening#lastChanged -1.000--> java.time.Instant com.caweco.esra.entities.core.Screening#lastChanged
+    java.lang.String com.caweco.esra.entities.core.Screening#lastChangedBy -1.000--> java.lang.String com.caweco.esra.entities.core.Screening#lastChangedBy
+    one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#notableChanges -1.000--> one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#notableChanges
+    one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#companySubMatchComments  REMOVED 
+    one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#individuals  REMOVED 
+    one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#aircrafts  REMOVED 
+    one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#vessels  REMOVED 
+    one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#companies  REMOVED 
+    one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#companySubMatchData  REMOVED 
+    one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#watchlistIndividuals  REMOVED 
+    one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#watchlistAircrafts  REMOVED 
+    one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#watchlistVessels  REMOVED
+2025-08-29 16:27:11.349 INFO:   [main] one.microstream.persistence.internal.LoggingLegacyTypeMappingResultor.createMappingResult() Legacy type mapping required for legacy type 
+    1000112:com.caweco.esra.entities.core.SearchEntryCompany
+    to current type 
+    1000196:com.caweco.esra.entities.core.SearchEntryCompany
+    Fields:
+    java.time.Instant com.caweco.esra.entities.core.SearchEntryCompany#created -1.000--> java.time.Instant com.caweco.esra.entities.core.SearchEntryCompany#created
+    java.lang.String com.caweco.esra.entities.core.SearchEntryCompany#createdBy -1.000--> java.lang.String com.caweco.esra.entities.core.SearchEntryCompany#createdBy
+    com.caweco.esra.entities.rest.information.CIResponse com.caweco.esra.entities.core.SearchEntryCompany#item -1.000--> com.caweco.esra.entities.rest.information.CIResponse com.caweco.esra.entities.core.SearchEntryCompany#item
+    java.lang.String com.caweco.esra.entities.core.SearchEntryCompany#comment -1.000--> java.lang.String com.caweco.esra.entities.core.SearchEntryCompany#comment
+    java.util.Map com.caweco.esra.entities.core.SearchEntryCompany#matchData -1.000--> java.util.Map com.caweco.esra.entities.core.SearchEntryCompany#matchData
+      NEW    > java.util.UUID com.caweco.esra.entities.core.SearchEntryCompany#id
+      NEW    > java.util.UUID com.caweco.esra.entities.core.SearchEntryCompany#parentId
+    com.caweco.esra.entities.rest.namematch.BvdMatch com.caweco.esra.entities.core.SearchEntryCompany#itemFirstCall  REMOVED
+2025-08-29 16:27:11.351 INFO:   [main] one.microstream.persistence.internal.LoggingLegacyTypeMappingResultor.createMappingResult() Legacy type mapping required for legacy type 
+    1000131:com.caweco.esra.entities.core.SearchEntryGsss
+    to current type 
+    1000179:com.caweco.esra.entities.core.SearchEntryGsss
+    Fields:
+    java.time.Instant com.caweco.esra.entities.core.SearchEntryGsss#created -1.000--> java.time.Instant com.caweco.esra.entities.core.SearchEntryGsss#created
+    java.lang.String com.caweco.esra.entities.core.SearchEntryGsss#createdBy -1.000--> java.lang.String com.caweco.esra.entities.core.SearchEntryGsss#createdBy
+    com.caweco.esra.ui.sanctions.bean.SearchType com.caweco.esra.entities.core.SearchEntryGsss#searchtype -1.000--> com.caweco.esra.ui.sanctions.bean.SearchType com.caweco.esra.entities.core.SearchEntryGsss#searchtype
+    java.lang.String com.caweco.esra.entities.core.SearchEntryGsss#comment -1.000--> java.lang.String com.caweco.esra.entities.core.SearchEntryGsss#comment
+    java.lang.Integer com.caweco.esra.entities.core.SearchEntryGsss#appliedThreshold -1.000--> java.lang.Integer com.caweco.esra.entities.core.SearchEntryGsss#appliedThreshold
+      NEW    > java.lang.String com.caweco.esra.entities.core.SearchEntryGsss#country
+    [Ljava.lang.String; com.caweco.esra.entities.core.SearchEntryGsss#response_statusMessage -1.000--> [Ljava.lang.String; com.caweco.esra.entities.core.SearchEntryGsss#response_statusMessage
+    java.lang.String com.caweco.esra.entities.core.SearchEntryGsss#response_nameToSearch -1.000--> java.lang.String com.caweco.esra.entities.core.SearchEntryGsss#response_nameToSearch
+    long com.caweco.esra.entities.core.SearchEntryGsss#response_numberOfGSSSHitsOrig -1.000--> long com.caweco.esra.entities.core.SearchEntryGsss#response_numberOfGSSSHitsOrig
+    java.util.List com.caweco.esra.entities.core.SearchEntryGsss#filtered_gsssMatchResults -1.000--> java.util.List com.caweco.esra.entities.core.SearchEntryGsss#filtered_gsssMatchResults
+    java.util.Map com.caweco.esra.entities.core.SearchEntryGsss#matchData -1.000--> java.util.Map com.caweco.esra.entities.core.SearchEntryGsss#matchData
+      NEW    > java.util.UUID com.caweco.esra.entities.core.SearchEntryGsss#id
+2025-08-29 16:27:11.351 INFO:   [main] one.microstream.persistence.internal.LoggingLegacyTypeMappingResultor.createMappingResult() Legacy type mapping required for legacy type 
+    1000132:com.caweco.esra.ui.sanctions.bean.SearchType
+    to current type 
+    1000152:com.caweco.esra.ui.sanctions.bean.SearchType
+    Fields:
+    enum COMPANY -1.000--> enum COMPANY
+    enum INDIVIDUAL -1.000--> enum INDIVIDUAL
+    enum VESSEL -1.000--> enum VESSEL
+    enum AIRCRAFT -1.000--> enum AIRCRAFT
+      NEW    > enum UNKNOWN
+      NEW    > enum IMONUMBER
+      NEW    > enum ORGANIZATION
+      NEW    > enum SEAWEB2_IMONUMBER
+      NEW    > enum SEAWEB2_NAME
+      NEW    > enum SEAWEB2_IMONUMBER_MULTI
+    java.lang.String java.lang.Enum#name -1.000--> java.lang.String java.lang.Enum#name
+    int java.lang.Enum#ordinal -1.000--> int java.lang.Enum#ordinal
+    int com.caweco.esra.ui.sanctions.bean.SearchType#id -1.000--> int com.caweco.esra.ui.sanctions.bean.SearchType#id
+    java.lang.String com.caweco.esra.ui.sanctions.bean.SearchType#name -1.000--> java.lang.String com.caweco.esra.ui.sanctions.bean.SearchType#name
+2025-08-29 16:27:11.353 INFO:   [main] one.microstream.persistence.internal.LoggingLegacyTypeMappingResultor.createMappingResult() Legacy type mapping required for legacy type 
+    1000134:com.caweco.esra.entities.mailing.MailType
+    to current type 
+    1000181:com.caweco.esra.entities.mailing.MailType
+    Fields:
+    enum NEW_GROUPMESSAGE -1.000--> enum NEW_GROUPMESSAGE
+    enum NEW_PUBLICMESSAGE -1.000--> enum NEW_PUBLICMESSAGE
+    enum MESSAGING_GROUPINVITATION -1.000--> enum MESSAGING_GROUPINVITATION
+    enum REVIEW_REQUEST -1.000--> enum REVIEW_REQUEST
+    enum REVIEW_FINISHED -1.000--> enum REVIEW_FINISHED
+    enum SCREENING_NEEDS_UPDATE -1.000--> enum SCREENING_NEEDS_UPDATE
+    enum SCREENING_OWNER_CHANGE -1.000--> enum SCREENING_OWNER_CHANGE
+    enum SCREENING_SERVICEUSER_CHANGE -1.000--> enum SCREENING_SERVICEUSER_CHANGE
+      NEW    > enum SCREENING_OWNER_TAKEOVER
+      NEW    > enum SCREENING_REMINDER
+      NEW    > enum SUBSIDIARY_SCREENING_FINISHED
+    java.lang.String java.lang.Enum#name -1.000--> java.lang.String java.lang.Enum#name
+    int java.lang.Enum#ordinal -1.000--> int java.lang.Enum#ordinal
+2025-08-29 16:27:11.356 INFO:   [main] one.microstream.persistence.internal.LoggingLegacyTypeMappingResultor.createMappingResult() Legacy type mapping required for legacy type 
+    1000139:com.caweco.esra.entities.rest.general.GsssMatch
+    to current type 
+    1000197:com.caweco.esra.entities.rest.general.GsssMatch
+    Fields:
+    double com.caweco.esra.entities.rest.general.GsssMatch#hitScore -1.000--> double com.caweco.esra.entities.rest.general.GsssMatch#hitScore
+    java.lang.String com.caweco.esra.entities.rest.general.GsssMatch#name -1.000--> java.lang.String com.caweco.esra.entities.rest.general.GsssMatch#name
+    java.util.Map com.caweco.esra.entities.rest.general.GsssMatch#aliases -1.000--> java.util.Map com.caweco.esra.entities.rest.general.GsssMatch#aliases
+    java.lang.String com.caweco.esra.entities.rest.general.GsssMatch#gender -1.000--> java.lang.String com.caweco.esra.entities.rest.general.GsssMatch#gender
+    java.util.Map com.caweco.esra.entities.rest.general.GsssMatch#addresses -1.000--> java.util.Map com.caweco.esra.entities.rest.general.GsssMatch#addresses
+    java.util.Map com.caweco.esra.entities.rest.general.GsssMatch#dateOfBirth -1.000--> java.util.Map com.caweco.esra.entities.rest.general.GsssMatch#dateOfBirth
+    java.lang.String com.caweco.esra.entities.rest.general.GsssMatch#deceasedDate -1.000--> java.lang.String com.caweco.esra.entities.rest.general.GsssMatch#deceasedDate
+    java.util.Map com.caweco.esra.entities.rest.general.GsssMatch#placeOfBirth -1.000--> java.util.Map com.caweco.esra.entities.rest.general.GsssMatch#placeOfBirth
+    java.lang.String com.caweco.esra.entities.rest.general.GsssMatch#citizenshipAndResidency -1.000--> java.lang.String com.caweco.esra.entities.rest.general.GsssMatch#citizenshipAndResidency
+    java.util.Map com.caweco.esra.entities.rest.general.GsssMatch#identification -1.000--> java.util.Map com.caweco.esra.entities.rest.general.GsssMatch#identification
+    java.lang.String com.caweco.esra.entities.rest.general.GsssMatch#factivaEntryID -1.000--> java.lang.String com.caweco.esra.entities.rest.general.GsssMatch#factivaEntryID
+      NEW    > java.lang.String com.caweco.esra.entities.rest.general.GsssMatch#internalEsraID
+    java.util.Map com.caweco.esra.entities.rest.general.GsssMatch#categories -1.000--> java.util.Map com.caweco.esra.entities.rest.general.GsssMatch#categories
+    java.lang.String com.caweco.esra.entities.rest.general.GsssMatch#sanctionsReferences -1.000--> java.lang.String com.caweco.esra.entities.rest.general.GsssMatch#sanctionsReferences
+    java.lang.String com.caweco.esra.entities.rest.general.GsssMatch#sanctionsIds -1.000--> java.lang.String com.caweco.esra.entities.rest.general.GsssMatch#sanctionsIds
+    com.caweco.esra.entities.rest.namematch.Roles com.caweco.esra.entities.rest.general.GsssMatch#pepRoles -1.000--> com.caweco.esra.entities.rest.namematch.Roles com.caweco.esra.entities.rest.general.GsssMatch#pepRoles
+    java.util.Map com.caweco.esra.entities.rest.general.GsssMatch#linkedProfiles -1.000--> java.util.Map com.caweco.esra.entities.rest.general.GsssMatch#linkedProfiles
+    java.lang.String com.caweco.esra.entities.rest.general.GsssMatch#profileNotes -1.000--> java.lang.String com.caweco.esra.entities.rest.general.GsssMatch#profileNotes
+    java.lang.String com.caweco.esra.entities.rest.general.GsssMatch#sources -1.000--> java.lang.String com.caweco.esra.entities.rest.general.GsssMatch#sources
+2025-08-29 16:27:11.356 INFO:   [main] one.microstream.persistence.internal.LoggingLegacyTypeMappingResultor.createMappingResult() Legacy type mapping required for legacy type 
+    1000141:com.caweco.esra.entities.core.MatchData
+    to current type 
+    1000175:com.caweco.esra.entities.core.MatchData
+    Fields:
+    java.lang.String com.caweco.esra.entities.core.MatchData#comment -1.000--> java.lang.String com.caweco.esra.entities.core.MatchData#comment
+    java.lang.String com.caweco.esra.entities.core.MatchData#rating -1.000--> java.lang.String com.caweco.esra.entities.core.MatchData#rating
+    java.lang.String com.caweco.esra.entities.core.MatchData#ratingStatement -1.000--> java.lang.String com.caweco.esra.entities.core.MatchData#ratingStatement
+      NEW    > java.lang.String com.caweco.esra.entities.core.MatchData#username
+2025-08-29 16:27:11.356 INFO:   [main] one.microstream.persistence.internal.LoggingLegacyTypeMappingResultor.createMappingResult() Legacy type mapping required for legacy type 
+    1000146:com.caweco.esra.ui.sanctions.parts.filehandler.BinaryElement
+    to current type 
+    1000185:com.caweco.esra.ui.sanctions.parts.filehandler.BinaryElement
+    Fields:
+    one.microstream.reference.Lazy com.caweco.esra.ui.sanctions.parts.filehandler.BinaryElement#binaryData -1.000--> one.microstream.reference.Lazy com.caweco.esra.ui.sanctions.parts.filehandler.BinaryElement#binaryData
+    java.lang.String com.caweco.esra.ui.sanctions.parts.filehandler.BinaryElement#fileName -1.000--> java.lang.String com.caweco.esra.ui.sanctions.parts.filehandler.BinaryElement#fileName
+    java.lang.String com.caweco.esra.ui.sanctions.parts.filehandler.BinaryElement#mimeType -1.000--> java.lang.String com.caweco.esra.ui.sanctions.parts.filehandler.BinaryElement#mimeType
+      NEW    > java.util.UUID com.caweco.esra.ui.sanctions.parts.filehandler.BinaryElement#uuid
+2025-08-29 16:27:11.357 INFO:   [main] one.microstream.persistence.internal.LoggingLegacyTypeMappingResultor.createMappingResult() Legacy type mapping required for legacy type 
+    1000150:com.caweco.esra.ui.sanctions.bean.SearchType
+    to current type 
+    1000152:com.caweco.esra.ui.sanctions.bean.SearchType
+    Fields:
+    enum COMPANY -1.000--> enum COMPANY
+    enum INDIVIDUAL -1.000--> enum INDIVIDUAL
+    enum VESSEL -1.000--> enum VESSEL
+    enum AIRCRAFT -1.000--> enum AIRCRAFT
+    enum UNKNOWN -1.000--> enum UNKNOWN
+    enum IMONUMBER -1.000--> enum IMONUMBER
+    enum ORGANIZATION -1.000--> enum ORGANIZATION
+      NEW    > enum SEAWEB2_IMONUMBER
+      NEW    > enum SEAWEB2_NAME
+      NEW    > enum SEAWEB2_IMONUMBER_MULTI
+    java.lang.String java.lang.Enum#name -1.000--> java.lang.String java.lang.Enum#name
+    int java.lang.Enum#ordinal -1.000--> int java.lang.Enum#ordinal
+    int com.caweco.esra.ui.sanctions.bean.SearchType#id -1.000--> int com.caweco.esra.ui.sanctions.bean.SearchType#id
+    java.lang.String com.caweco.esra.ui.sanctions.bean.SearchType#name -1.000--> java.lang.String com.caweco.esra.ui.sanctions.bean.SearchType#name
+2025-08-29 16:27:11.358 INFO:   [main] one.microstream.persistence.internal.LoggingLegacyTypeMappingResultor.createMappingResult() Legacy type mapping required for legacy type 
+    1000162:com.caweco.esra.entities.core.SearchEntryCompany
+    to current type 
+    1000196:com.caweco.esra.entities.core.SearchEntryCompany
+    Fields:
+    java.time.Instant com.caweco.esra.entities.core.SearchEntryCompany#created -1.000--> java.time.Instant com.caweco.esra.entities.core.SearchEntryCompany#created
+    java.lang.String com.caweco.esra.entities.core.SearchEntryCompany#createdBy -1.000--> java.lang.String com.caweco.esra.entities.core.SearchEntryCompany#createdBy
+    com.caweco.esra.entities.rest.information.CIResponse com.caweco.esra.entities.core.SearchEntryCompany#item -1.000--> com.caweco.esra.entities.rest.information.CIResponse com.caweco.esra.entities.core.SearchEntryCompany#item
+    java.lang.String com.caweco.esra.entities.core.SearchEntryCompany#comment -1.000--> java.lang.String com.caweco.esra.entities.core.SearchEntryCompany#comment
+    java.util.Map com.caweco.esra.entities.core.SearchEntryCompany#matchData -1.000--> java.util.Map com.caweco.esra.entities.core.SearchEntryCompany#matchData
+    java.util.UUID com.caweco.esra.entities.core.SearchEntryCompany#id -1.000--> java.util.UUID com.caweco.esra.entities.core.SearchEntryCompany#id
+      NEW    > java.util.UUID com.caweco.esra.entities.core.SearchEntryCompany#parentId
+    com.caweco.esra.entities.rest.namematch.BvdMatch com.caweco.esra.entities.core.SearchEntryCompany#itemFirstCall  REMOVED
+2025-08-29 16:27:11.359 INFO:   [main] one.microstream.persistence.internal.LoggingLegacyTypeMappingResultor.createMappingResult() Legacy type mapping required for legacy type 
+    1000163:com.caweco.esra.entities.core.SearchEntryGsss
+    to current type 
+    1000179:com.caweco.esra.entities.core.SearchEntryGsss
+    Fields:
+    java.time.Instant com.caweco.esra.entities.core.SearchEntryGsss#created -1.000--> java.time.Instant com.caweco.esra.entities.core.SearchEntryGsss#created
+    java.lang.String com.caweco.esra.entities.core.SearchEntryGsss#createdBy -1.000--> java.lang.String com.caweco.esra.entities.core.SearchEntryGsss#createdBy
+    com.caweco.esra.ui.sanctions.bean.SearchType com.caweco.esra.entities.core.SearchEntryGsss#searchtype -1.000--> com.caweco.esra.ui.sanctions.bean.SearchType com.caweco.esra.entities.core.SearchEntryGsss#searchtype
+    java.lang.String com.caweco.esra.entities.core.SearchEntryGsss#comment -1.000--> java.lang.String com.caweco.esra.entities.core.SearchEntryGsss#comment
+    java.lang.Integer com.caweco.esra.entities.core.SearchEntryGsss#appliedThreshold -1.000--> java.lang.Integer com.caweco.esra.entities.core.SearchEntryGsss#appliedThreshold
+      NEW    > java.lang.String com.caweco.esra.entities.core.SearchEntryGsss#country
+    [Ljava.lang.String; com.caweco.esra.entities.core.SearchEntryGsss#response_statusMessage -1.000--> [Ljava.lang.String; com.caweco.esra.entities.core.SearchEntryGsss#response_statusMessage
+    java.lang.String com.caweco.esra.entities.core.SearchEntryGsss#response_nameToSearch -1.000--> java.lang.String com.caweco.esra.entities.core.SearchEntryGsss#response_nameToSearch
+    long com.caweco.esra.entities.core.SearchEntryGsss#response_numberOfGSSSHitsOrig -1.000--> long com.caweco.esra.entities.core.SearchEntryGsss#response_numberOfGSSSHitsOrig
+    java.util.List com.caweco.esra.entities.core.SearchEntryGsss#filtered_gsssMatchResults -1.000--> java.util.List com.caweco.esra.entities.core.SearchEntryGsss#filtered_gsssMatchResults
+    java.util.Map com.caweco.esra.entities.core.SearchEntryGsss#matchData -1.000--> java.util.Map com.caweco.esra.entities.core.SearchEntryGsss#matchData
+    java.util.UUID com.caweco.esra.entities.core.SearchEntryGsss#id -1.000--> java.util.UUID com.caweco.esra.entities.core.SearchEntryGsss#id
+2025-08-29 16:27:11.360 INFO:   [main] one.microstream.persistence.internal.LoggingLegacyTypeMappingResultor.createMappingResult() Legacy type mapping required for legacy type 
+    1000164:com.caweco.esra.entities.core.SearchEntrySeaweb2Vessel
+    to current type 
+    1000180:com.caweco.esra.entities.core.SearchEntrySeaweb2Vessel
+    Fields:
+    java.time.Instant com.caweco.esra.entities.core.SearchEntrySeaweb2Vessel#created -1.000--> java.time.Instant com.caweco.esra.entities.core.SearchEntrySeaweb2Vessel#created
+    java.lang.String com.caweco.esra.entities.core.SearchEntrySeaweb2Vessel#createdBy -1.000--> java.lang.String com.caweco.esra.entities.core.SearchEntrySeaweb2Vessel#createdBy
+    com.caweco.esra.entities.rest.seaweb2.APSShipDetail_v2 com.caweco.esra.entities.core.SearchEntrySeaweb2Vessel#shipDetails -1.000--> com.caweco.esra.entities.rest.seaweb2.APSShipDetail_v2 com.caweco.esra.entities.core.SearchEntrySeaweb2Vessel#shipDetails
+    java.lang.Integer com.caweco.esra.entities.core.SearchEntrySeaweb2Vessel#shipCount -1.000--> java.lang.Integer com.caweco.esra.entities.core.SearchEntrySeaweb2Vessel#shipCount
+    com.caweco.esra.entities.rest.seaweb2.APSStatus_v2 com.caweco.esra.entities.core.SearchEntrySeaweb2Vessel#apsStatus -1.000--> com.caweco.esra.entities.rest.seaweb2.APSStatus_v2 com.caweco.esra.entities.core.SearchEntrySeaweb2Vessel#apsStatus
+    java.lang.String com.caweco.esra.entities.core.SearchEntrySeaweb2Vessel#entryComment -1.000--> java.lang.String com.caweco.esra.entities.core.SearchEntrySeaweb2Vessel#entryComment
+    java.lang.String com.caweco.esra.entities.core.SearchEntrySeaweb2Vessel#rating -1.000--> java.lang.String com.caweco.esra.entities.core.SearchEntrySeaweb2Vessel#rating
+    java.lang.String com.caweco.esra.entities.core.SearchEntrySeaweb2Vessel#ratingStatement -1.000--> java.lang.String com.caweco.esra.entities.core.SearchEntrySeaweb2Vessel#ratingStatement
+      NEW    > java.lang.String com.caweco.esra.entities.core.SearchEntrySeaweb2Vessel#username
+    java.util.Map com.caweco.esra.entities.core.SearchEntrySeaweb2Vessel#redFlagSettings_atFreeze -1.000--> java.util.Map com.caweco.esra.entities.core.SearchEntrySeaweb2Vessel#redFlagSettings_atFreeze
+    java.util.UUID com.caweco.esra.entities.core.SearchEntrySeaweb2Vessel#id -1.000--> java.util.UUID com.caweco.esra.entities.core.SearchEntrySeaweb2Vessel#id
+2025-08-29 16:27:11.361 INFO:   [main] one.microstream.persistence.internal.LoggingLegacyTypeMappingResultor.createMappingResult() Legacy type mapping required for legacy type 
+    1000166:com.caweco.esra.entities.questionnaire.DateChooserQuestion
+    to current type 
+    1000187:com.caweco.esra.entities.questionnaire.DateChooserQuestion
+    Fields:
+      NEW    > java.util.UUID com.caweco.esra.entities.questionnaire.Question#uid
+    java.lang.Integer com.caweco.esra.entities.questionnaire.Question#id -1.000--> java.lang.Integer com.caweco.esra.entities.questionnaire.Question#id
+    com.caweco.esra.entities.questionnaire.QuestionCategory com.caweco.esra.entities.questionnaire.Question#category -1.000--> com.caweco.esra.entities.questionnaire.QuestionCategory com.caweco.esra.entities.questionnaire.Question#category
+    java.lang.String com.caweco.esra.entities.questionnaire.Question#questionText -1.000--> java.lang.String com.caweco.esra.entities.questionnaire.Question#questionText
+    java.lang.String com.caweco.esra.entities.questionnaire.Question#helperText -1.000--> java.lang.String com.caweco.esra.entities.questionnaire.Question#helperText
+    java.lang.Boolean com.caweco.esra.entities.questionnaire.Question#active -1.000--> java.lang.Boolean com.caweco.esra.entities.questionnaire.Question#active
+    java.lang.Boolean com.caweco.esra.entities.questionnaire.Question#standard -1.000--> java.lang.Boolean com.caweco.esra.entities.questionnaire.Question#standard
+    com.caweco.esra.entities.questionnaire.Rule com.caweco.esra.entities.questionnaire.Question#rule -1.000--> com.caweco.esra.entities.questionnaire.Rule com.caweco.esra.entities.questionnaire.Question#rule
+    java.lang.String com.caweco.esra.entities.questionnaire.Question#instructionText -1.000--> java.lang.String com.caweco.esra.entities.questionnaire.Question#instructionText
+2025-08-29 16:27:11.364 INFO:   [main] one.microstream.persistence.internal.LoggingLegacyTypeMappingResultor.createMappingResult() Legacy type mapping required for legacy type 
+    1000170:com.caweco.esra.entities.Client
+    to current type 
+    1000194:com.caweco.esra.entities.Client
+    Fields:
+    java.util.UUID com.caweco.esra.entities.Client#uuid -1.000--> java.util.UUID com.caweco.esra.entities.Client#uuid
+    java.lang.String com.caweco.esra.entities.Client#clientDescription -1.000--> java.lang.String com.caweco.esra.entities.Client#clientDescription
+    java.util.Set com.caweco.esra.entities.Client#roles -1.000--> java.util.Set com.caweco.esra.entities.Client#roles
+    java.util.Map com.caweco.esra.entities.Client#newQuestionnaires -1.000--> java.util.Map com.caweco.esra.entities.Client#newQuestionnaires
+    java.util.Set com.caweco.esra.entities.Client#esuTemplates -1.000--> java.util.Set com.caweco.esra.entities.Client#esuTemplates
+    one.microstream.reference.Lazy com.caweco.esra.entities.Client#esuTags -1.000--> one.microstream.reference.Lazy com.caweco.esra.entities.Client#esuTags
+    one.microstream.reference.Lazy com.caweco.esra.entities.Client#esuCountries -1.000--> one.microstream.reference.Lazy com.caweco.esra.entities.Client#esuCountries
+    one.microstream.reference.Lazy com.caweco.esra.entities.Client#prcCountries -1.000--> one.microstream.reference.Lazy com.caweco.esra.entities.Client#prcCountries
+    java.util.Set com.caweco.esra.entities.Client#oes -1.000--> java.util.Set com.caweco.esra.entities.Client#oes
+    java.util.Set com.caweco.esra.entities.Client#functions -1.000--> java.util.Set com.caweco.esra.entities.Client#functions
+    java.util.Set com.caweco.esra.entities.Client#lobs -1.000--> java.util.Set com.caweco.esra.entities.Client#lobs
+    java.util.Set com.caweco.esra.entities.Client#oeRegions -1.000--> java.util.Set com.caweco.esra.entities.Client#oeRegions
+    java.util.Map com.caweco.esra.entities.Client#mailTemplates -1.000--> java.util.Map com.caweco.esra.entities.Client#mailTemplates
+    java.util.Set com.caweco.esra.entities.Client#matchRatingStatements -1.000--> java.util.Set com.caweco.esra.entities.Client#matchRatingStatements
+    java.util.List com.caweco.esra.entities.Client#matchCategoryTags -1.000--> java.util.List com.caweco.esra.entities.Client#matchCategoryTags
+    com.caweco.esra.entities.config.EsraClientConfiguration com.caweco.esra.entities.Client#clientConfiguration -1.000--> com.caweco.esra.entities.config.EsraClientConfiguration com.caweco.esra.entities.Client#clientConfiguration
+    one.microstream.reference.Lazy com.caweco.esra.entities.Client#clientUser -1.000--> one.microstream.reference.Lazy com.caweco.esra.entities.Client#clientUser
+    one.microstream.reference.Lazy com.caweco.esra.entities.Client#clientAssignmentRulesLdap -1.000--> one.microstream.reference.Lazy com.caweco.esra.entities.Client#clientAssignmentRulesLdap
+    java.util.Set com.caweco.esra.entities.Client#seaweb2ScreeningKeyConfig -1.000--> java.util.Set com.caweco.esra.entities.Client#seaweb2ScreeningKeyConfig
+    java.util.concurrent.ConcurrentHashMap com.caweco.esra.entities.Client#screeningsConcurrentMap -1.000--> java.util.concurrent.ConcurrentHashMap com.caweco.esra.entities.Client#screeningsConcurrentMap
+    java.util.Set com.caweco.esra.entities.Client#user  REMOVED 
+    java.util.Set com.caweco.esra.entities.Client#questionnaires  REMOVED 
+    java.util.Set com.caweco.esra.entities.Client#screenings  REMOVED 
+    one.microstream.reference.Lazy com.caweco.esra.entities.Client#clientAssignmentRules  REMOVED 
+    java.util.concurrent.CopyOnWriteArrayList com.caweco.esra.entities.Client#screeningsConcurrent2  REMOVED
+2025-08-29 16:27:11.367 INFO:   [main] one.microstream.persistence.internal.LoggingLegacyTypeMappingResultor.createMappingResult() Legacy type mapping required for legacy type 
+    1000174:com.caweco.esra.entities.config.EsraClientConfiguration
+    to current type 
+    1000199:com.caweco.esra.entities.config.EsraClientConfiguration
+    Fields:
+    java.lang.String com.caweco.esra.entities.config.EsraClientConfiguration#clientRepresentation -1.000--> java.lang.String com.caweco.esra.entities.config.EsraClientConfiguration#clientRepresentation
+    com.caweco.esra.entities.config.ConfigRestEndpoint com.caweco.esra.entities.config.EsraClientConfiguration#configRestCara -1.000--> com.caweco.esra.entities.config.ConfigRestEndpoint com.caweco.esra.entities.config.EsraClientConfiguration#configRestCara
+    com.caweco.esra.entities.config.ConfigRestEndpoint com.caweco.esra.entities.config.EsraClientConfiguration#configRestSeaWeb -1.000--> com.caweco.esra.entities.config.ConfigRestEndpoint com.caweco.esra.entities.config.EsraClientConfiguration#configRestSeaWeb
+    com.caweco.esra.entities.config.ConfigMailServer com.caweco.esra.entities.config.EsraClientConfiguration#configMailServer -1.000--> com.caweco.esra.entities.config.ConfigMailServer com.caweco.esra.entities.config.EsraClientConfiguration#configMailServer
+    int com.caweco.esra.entities.config.EsraClientConfiguration#tresholdGsssResultScore -1.000--> int com.caweco.esra.entities.config.EsraClientConfiguration#tresholdGsssResultScore
+    int com.caweco.esra.entities.config.EsraClientConfiguration#esraMonitoringPeriodDefaultDays -1.000--> int com.caweco.esra.entities.config.EsraClientConfiguration#esraMonitoringPeriodDefaultDays
+    int com.caweco.esra.entities.config.EsraClientConfiguration#esraScreeningRetentionPeriodDays -1.000--> int com.caweco.esra.entities.config.EsraClientConfiguration#esraScreeningRetentionPeriodDays
+    int com.caweco.esra.entities.config.EsraClientConfiguration#esraScreeningArchivalPeriodDays -1.000--> int com.caweco.esra.entities.config.EsraClientConfiguration#esraScreeningArchivalPeriodDays
+    int com.caweco.esra.entities.config.EsraClientConfiguration#esraScreeningReminderPeriodDays -1.000--> int com.caweco.esra.entities.config.EsraClientConfiguration#esraScreeningReminderPeriodDays
+      NEW    > int com.caweco.esra.entities.config.EsraClientConfiguration#esraScreeningRecurringReminderPeriodDays
+    java.lang.String com.caweco.esra.entities.config.EsraClientConfiguration#supportEmail -1.000--> java.lang.String com.caweco.esra.entities.config.EsraClientConfiguration#supportEmail
+    int com.caweco.esra.entities.config.EsraClientConfiguration#esuAutosavePeriodMinutes -1.000--> int com.caweco.esra.entities.config.EsraClientConfiguration#esuAutosavePeriodMinutes
+2025-08-29 16:27:11.375 INFO:   [main] one.microstream.persistence.internal.LoggingLegacyTypeMappingResultor.createMappingResult() Legacy type mapping required for legacy type 
+    1000177:com.caweco.esra.entities.core.Screening
+    to current type 
+    1000198:com.caweco.esra.entities.core.Screening
+    Fields:
+    java.util.UUID com.caweco.esra.entities.core.Screening#screeningID -1.000--> java.util.UUID com.caweco.esra.entities.core.Screening#screeningID
+    java.time.LocalDate com.caweco.esra.entities.core.Screening#screeningDate -1.000--> java.time.LocalDate com.caweco.esra.entities.core.Screening#screeningDate
+    java.util.Optional com.caweco.esra.entities.core.Screening#screeningEsuDate -1.000--> java.util.Optional com.caweco.esra.entities.core.Screening#screeningEsuDate
+      NEW    > java.util.Optional com.caweco.esra.entities.core.Screening#screeningPublishDate
+    com.caweco.esra.entities.User com.caweco.esra.entities.core.Screening#screeningOwner -1.000--> com.caweco.esra.entities.User com.caweco.esra.entities.core.Screening#screeningOwner
+    com.caweco.esra.entities.User com.caweco.esra.entities.core.Screening#screeningServiceUser -1.000--> com.caweco.esra.entities.User com.caweco.esra.entities.core.Screening#screeningServiceUser
+    java.lang.String com.caweco.esra.entities.core.Screening#name -1.000--> java.lang.String com.caweco.esra.entities.core.Screening#name
+    com.caweco.esra.entities.core.LineOfBusiness com.caweco.esra.entities.core.Screening#lineOfBusiness -1.000--> com.caweco.esra.entities.core.LineOfBusiness com.caweco.esra.entities.core.Screening#lineOfBusiness
+    com.caweco.esra.entities.core.OE com.caweco.esra.entities.core.Screening#oe -1.000--> com.caweco.esra.entities.core.OE com.caweco.esra.entities.core.Screening#oe
+    com.caweco.esra.entities.core.Function com.caweco.esra.entities.core.Screening#function -1.000--> com.caweco.esra.entities.core.Function com.caweco.esra.entities.core.Screening#function
+    com.caweco.esra.entities.core.ScreeningStatus com.caweco.esra.entities.core.Screening#status -1.000--> com.caweco.esra.entities.core.ScreeningStatus com.caweco.esra.entities.core.Screening#status
+    com.caweco.esra.entities.core.InternalWorkflowStatus com.caweco.esra.entities.core.Screening#workflowStatus -1.000--> com.caweco.esra.entities.core.InternalWorkflowStatus com.caweco.esra.entities.core.Screening#workflowStatus
+    com.caweco.esra.entities.core.Monitoring com.caweco.esra.entities.core.Screening#latestMonitoring -1.000--> com.caweco.esra.entities.core.Monitoring com.caweco.esra.entities.core.Screening#latestMonitoring
+    one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#newWatchlistCompanyEntries -1.000--> one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#newWatchlistCompanyEntries
+    one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#newWatchlistSearchEntriesGsss -1.000--> one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#newWatchlistSearchEntriesGsss
+    one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#newVesselsSeaWeb -1.000--> one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#newVesselsSeaWeb
+    com.caweco.esra.entities.questionnaire.QuestionnaireResult com.caweco.esra.entities.core.Screening#tradeSanctionResult -1.000--> com.caweco.esra.entities.questionnaire.QuestionnaireResult com.caweco.esra.entities.core.Screening#tradeSanctionResult
+    com.caweco.esra.entities.questionnaire.QuestionnaireResult com.caweco.esra.entities.core.Screening#businessInformationResult -1.000--> com.caweco.esra.entities.questionnaire.QuestionnaireResult com.caweco.esra.entities.core.Screening#businessInformationResult
+    com.caweco.esra.entities.User com.caweco.esra.entities.core.Screening#esuWorker -1.000--> com.caweco.esra.entities.User com.caweco.esra.entities.core.Screening#esuWorker
+    java.lang.String com.caweco.esra.entities.core.Screening#ESUTemplateResult -1.000--> java.lang.String com.caweco.esra.entities.core.Screening#ESUTemplateResult
+    java.util.Set com.caweco.esra.entities.core.Screening#esuTags -1.000--> java.util.Set com.caweco.esra.entities.core.Screening#esuTags
+    java.util.Set com.caweco.esra.entities.core.Screening#esuCountries -1.000--> java.util.Set com.caweco.esra.entities.core.Screening#esuCountries
+    java.util.Set com.caweco.esra.entities.core.Screening#prcCountries -1.000--> java.util.Set com.caweco.esra.entities.core.Screening#prcCountries
+    one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#esuMessagesPublicNew -1.000--> one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#esuMessagesPublicNew
+    java.util.Map com.caweco.esra.entities.core.Screening#esuMessagesPrivate -1.000--> java.util.Map com.caweco.esra.entities.core.Screening#esuMessagesPrivate
+    java.util.Map com.caweco.esra.entities.core.Screening#esuMessageGroupsNew -1.000--> java.util.Map com.caweco.esra.entities.core.Screening#esuMessageGroupsNew
+    one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#files -1.000--> one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#files
+    boolean com.caweco.esra.entities.core.Screening#archived -1.000--> boolean com.caweco.esra.entities.core.Screening#archived
+    java.time.Instant com.caweco.esra.entities.core.Screening#created -1.000--> java.time.Instant com.caweco.esra.entities.core.Screening#created
+    java.lang.String com.caweco.esra.entities.core.Screening#createdBy -1.000--> java.lang.String com.caweco.esra.entities.core.Screening#createdBy
+    java.time.Instant com.caweco.esra.entities.core.Screening#lastChanged -1.000--> java.time.Instant com.caweco.esra.entities.core.Screening#lastChanged
+    java.lang.String com.caweco.esra.entities.core.Screening#lastChangedBy -1.000--> java.lang.String com.caweco.esra.entities.core.Screening#lastChangedBy
+    one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#notableChanges -1.000--> one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#notableChanges
+    one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#watchlistCompanyEntries  REMOVED 
+    one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#watchlistSearchEntriesGsss  REMOVED 
+    one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#vesselsSeaWeb  REMOVED 
+    one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#esuMessagesPublic  REMOVED 
+    java.util.Map com.caweco.esra.entities.core.Screening#esuMessageGroups  REMOVED 
+    one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#companySubMatchComments  REMOVED 
+    one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#individuals  REMOVED 
+    one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#aircrafts  REMOVED 
+    one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#vessels  REMOVED 
+    one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#companies  REMOVED 
+    one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#companySubMatchData  REMOVED 
+    one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#watchlistIndividuals  REMOVED 
+    one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#watchlistAircrafts  REMOVED 
+    one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#watchlistVessels  REMOVED
+2025-08-29 16:27:11.376 INFO:   [main] one.microstream.persistence.internal.LoggingLegacyTypeMappingResultor.createMappingResult() Legacy type mapping required for legacy type 
+    1000178:com.caweco.esra.entities.core.SearchEntryCompany
+    to current type 
+    1000196:com.caweco.esra.entities.core.SearchEntryCompany
+    Fields:
+    java.time.Instant com.caweco.esra.entities.core.SearchEntryCompany#created -1.000--> java.time.Instant com.caweco.esra.entities.core.SearchEntryCompany#created
+    java.lang.String com.caweco.esra.entities.core.SearchEntryCompany#createdBy -1.000--> java.lang.String com.caweco.esra.entities.core.SearchEntryCompany#createdBy
+    com.caweco.esra.entities.rest.information.CIResponse com.caweco.esra.entities.core.SearchEntryCompany#item -1.000--> com.caweco.esra.entities.rest.information.CIResponse com.caweco.esra.entities.core.SearchEntryCompany#item
+    java.lang.String com.caweco.esra.entities.core.SearchEntryCompany#comment -1.000--> java.lang.String com.caweco.esra.entities.core.SearchEntryCompany#comment
+    java.util.Map com.caweco.esra.entities.core.SearchEntryCompany#matchData -1.000--> java.util.Map com.caweco.esra.entities.core.SearchEntryCompany#matchData
+    java.util.UUID com.caweco.esra.entities.core.SearchEntryCompany#id -1.000--> java.util.UUID com.caweco.esra.entities.core.SearchEntryCompany#id
+    java.util.UUID com.caweco.esra.entities.core.SearchEntryCompany#parentId -1.000--> java.util.UUID com.caweco.esra.entities.core.SearchEntryCompany#parentId
+    com.caweco.esra.entities.rest.namematch.BvdMatch com.caweco.esra.entities.core.SearchEntryCompany#itemFirstCall  REMOVED
+2025-08-29 16:27:11.379 INFO:   [main] one.microstream.persistence.internal.LoggingLegacyTypeMappingResultor.createMappingResult() Legacy type mapping required for legacy type 
+    1000195:com.caweco.esra.entities.core.Screening
+    to current type 
+    1000198:com.caweco.esra.entities.core.Screening
+    Fields:
+    java.util.UUID com.caweco.esra.entities.core.Screening#screeningID -1.000--> java.util.UUID com.caweco.esra.entities.core.Screening#screeningID
+    java.time.LocalDate com.caweco.esra.entities.core.Screening#screeningDate -1.000--> java.time.LocalDate com.caweco.esra.entities.core.Screening#screeningDate
+    java.util.Optional com.caweco.esra.entities.core.Screening#screeningEsuDate -1.000--> java.util.Optional com.caweco.esra.entities.core.Screening#screeningEsuDate
+      NEW    > java.util.Optional com.caweco.esra.entities.core.Screening#screeningPublishDate
+    com.caweco.esra.entities.User com.caweco.esra.entities.core.Screening#screeningOwner -1.000--> com.caweco.esra.entities.User com.caweco.esra.entities.core.Screening#screeningOwner
+    com.caweco.esra.entities.User com.caweco.esra.entities.core.Screening#screeningServiceUser -1.000--> com.caweco.esra.entities.User com.caweco.esra.entities.core.Screening#screeningServiceUser
+    java.lang.String com.caweco.esra.entities.core.Screening#name -1.000--> java.lang.String com.caweco.esra.entities.core.Screening#name
+    com.caweco.esra.entities.core.LineOfBusiness com.caweco.esra.entities.core.Screening#lineOfBusiness -1.000--> com.caweco.esra.entities.core.LineOfBusiness com.caweco.esra.entities.core.Screening#lineOfBusiness
+    com.caweco.esra.entities.core.OE com.caweco.esra.entities.core.Screening#oe -1.000--> com.caweco.esra.entities.core.OE com.caweco.esra.entities.core.Screening#oe
+    com.caweco.esra.entities.core.Function com.caweco.esra.entities.core.Screening#function -1.000--> com.caweco.esra.entities.core.Function com.caweco.esra.entities.core.Screening#function
+    com.caweco.esra.entities.core.ScreeningStatus com.caweco.esra.entities.core.Screening#status -1.000--> com.caweco.esra.entities.core.ScreeningStatus com.caweco.esra.entities.core.Screening#status
+    com.caweco.esra.entities.core.InternalWorkflowStatus com.caweco.esra.entities.core.Screening#workflowStatus -1.000--> com.caweco.esra.entities.core.InternalWorkflowStatus com.caweco.esra.entities.core.Screening#workflowStatus
+    com.caweco.esra.entities.core.Monitoring com.caweco.esra.entities.core.Screening#latestMonitoring -1.000--> com.caweco.esra.entities.core.Monitoring com.caweco.esra.entities.core.Screening#latestMonitoring
+    one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#newWatchlistCompanyEntries -1.000--> one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#newWatchlistCompanyEntries
+    one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#newWatchlistSearchEntriesGsss -1.000--> one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#newWatchlistSearchEntriesGsss
+    one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#newVesselsSeaWeb -1.000--> one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#newVesselsSeaWeb
+    com.caweco.esra.entities.questionnaire.QuestionnaireResult com.caweco.esra.entities.core.Screening#tradeSanctionResult -1.000--> com.caweco.esra.entities.questionnaire.QuestionnaireResult com.caweco.esra.entities.core.Screening#tradeSanctionResult
+    com.caweco.esra.entities.questionnaire.QuestionnaireResult com.caweco.esra.entities.core.Screening#businessInformationResult -1.000--> com.caweco.esra.entities.questionnaire.QuestionnaireResult com.caweco.esra.entities.core.Screening#businessInformationResult
+    com.caweco.esra.entities.User com.caweco.esra.entities.core.Screening#esuWorker -1.000--> com.caweco.esra.entities.User com.caweco.esra.entities.core.Screening#esuWorker
+    java.lang.String com.caweco.esra.entities.core.Screening#ESUTemplateResult -1.000--> java.lang.String com.caweco.esra.entities.core.Screening#ESUTemplateResult
+    java.util.Set com.caweco.esra.entities.core.Screening#esuTags -1.000--> java.util.Set com.caweco.esra.entities.core.Screening#esuTags
+    java.util.Set com.caweco.esra.entities.core.Screening#esuCountries -1.000--> java.util.Set com.caweco.esra.entities.core.Screening#esuCountries
+    java.util.Set com.caweco.esra.entities.core.Screening#prcCountries -1.000--> java.util.Set com.caweco.esra.entities.core.Screening#prcCountries
+    one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#esuMessagesPublicNew -1.000--> one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#esuMessagesPublicNew
+    java.util.Map com.caweco.esra.entities.core.Screening#esuMessagesPrivate -1.000--> java.util.Map com.caweco.esra.entities.core.Screening#esuMessagesPrivate
+    java.util.Map com.caweco.esra.entities.core.Screening#esuMessageGroupsNew -1.000--> java.util.Map com.caweco.esra.entities.core.Screening#esuMessageGroupsNew
+    one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#files -1.000--> one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#files
+    boolean com.caweco.esra.entities.core.Screening#archived -1.000--> boolean com.caweco.esra.entities.core.Screening#archived
+    java.time.Instant com.caweco.esra.entities.core.Screening#created -1.000--> java.time.Instant com.caweco.esra.entities.core.Screening#created
+    java.lang.String com.caweco.esra.entities.core.Screening#createdBy -1.000--> java.lang.String com.caweco.esra.entities.core.Screening#createdBy
+    java.time.Instant com.caweco.esra.entities.core.Screening#lastChanged -1.000--> java.time.Instant com.caweco.esra.entities.core.Screening#lastChanged
+    java.lang.String com.caweco.esra.entities.core.Screening#lastChangedBy -1.000--> java.lang.String com.caweco.esra.entities.core.Screening#lastChangedBy
+    one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#notableChanges -1.000--> one.microstream.reference.Lazy com.caweco.esra.entities.core.Screening#notableChanges
+2025-08-29 16:27:11.382 INFO:   [main] one.microstream.persistence.types.PersistenceTypeHandlerManager$Default.initialize() Initializing type handler manager
+2025-08-29 16:32:37.033 INFO:   [main] one.microstream.storage.embedded.types.EmbeddedStorageManager$Default.start() Embedded storage manager initialized
+2025-08-29 16:32:37.035 INFO:   [main] one.microstream.persistence.types.PersistenceTypeHandlerManager$Default.initialize() Initializing type handler manager
+2025-08-29 16:32:39.555 INFO:   [main] com.caweco.esra.microstream.startup.MigrationTaskRunner.doTasks() Operation "2020-KW46_ESRA285" already done.
+2025-08-29 16:32:39.555 INFO:   [main] com.caweco.esra.microstream.startup.MigrationTaskRunner.doTasks() Operation "2020-KW50_ESRAMailtext" already done.
+2025-08-29 16:32:39.556 INFO:   [main] com.caweco.esra.microstream.startup.MigrationTaskRunner.doTasks() Operation "2021-KW26_Seaweb2Key" already done.
+2025-08-29 16:32:39.556 INFO:   [main] com.caweco.esra.microstream.startup.MigrationTaskRunner.doTasks() Operation "2021-KW39_ConcurrentClientUpdate2" already done.
+2025-08-29 16:32:39.556 INFO:   [main] com.caweco.esra.microstream.startup.MigrationTaskRunner.doTasks() Operation "2023-07-11_SquashNotableChanges_" already done.
+2025-08-29 16:32:39.557 INFO:   [main] com.caweco.esra.microstream.startup.MigrationTaskRunner.doTasks() Operation "2024-10-22_MigrationScreeningPublishDate_v4" already done.
+2025-08-29 16:32:39.557 INFO:   [main] com.caweco.esra.microstream.startup.task.special.SpecialOp_PrintStatistics.perform()  ## Number of User: 4522
+2025-08-29 16:32:39.558 INFO:   [main] com.caweco.esra.microstream.startup.task.special.SpecialOp_PrintStatistics.perform()  ## Number of Clients: 5 [(China) AGCS SE client, AGCS SE, AGCS NA, DefaultClient, ESRA Training]
+2025-08-29 16:32:39.558 INFO:   [main] com.caweco.esra.microstream.startup.task.special.SpecialOp_PrintStatistics.lambda$perform$1()  ## Number of Screenings [(China) AGCS SE client]: 0
+2025-08-29 16:32:39.558 INFO:   [main] com.caweco.esra.microstream.startup.task.special.SpecialOp_PrintStatistics.lambda$perform$1()  ## Number of Screenings [AGCS SE]: 139630
+2025-08-29 16:32:39.558 INFO:   [main] com.caweco.esra.microstream.startup.task.special.SpecialOp_PrintStatistics.lambda$perform$1()  ## Number of Screenings [AGCS NA]: 34250
+2025-08-29 16:32:39.558 INFO:   [main] com.caweco.esra.microstream.startup.task.special.SpecialOp_PrintStatistics.lambda$perform$1()  ## Number of Screenings [DefaultClient]: 1
+2025-08-29 16:32:39.558 INFO:   [main] com.caweco.esra.microstream.startup.task.special.SpecialOp_PrintStatistics.lambda$perform$1()  ## Number of Screenings [ESRA Training]: 61
+2025-08-29 16:32:39.559 INFO:   [main] com.caweco.esra.microstream.startup.task.special.SpecialOp_ResetSubsidiaryTasks.perform()  ## Startup - Clean / Reset Subsidiary Screening Tasks
+2025-08-29 16:32:39.560 INFO:   [main] com.caweco.esra.microstream.startup.SpecialOperationRunner.doTasks() Operation "SpecialOp_2022KW14_UpdateSeawebUrl" already done.
+2025-08-29 16:32:39.561 INFO:   [main] com.caweco.esra.microstream.startup.DataGuardian.ensureDataAvailability() Ensure that Data are available...
+2025-08-29 16:32:39.561 INFO:   [main] com.caweco.esra.microstream.startup.task.check.CheckAccessRuleData.ensureAvailability_AccessRuleData() Ensure that AccessRule Data are initialized...
+2025-08-29 16:32:39.571 INFO:   [main] com.caweco.esra.microstream.startup.task.check.CheckAccessRuleData.lambda$ensureAvailability_AccessRuleData$0() Client (China) AGCS SE client..
+2025-08-29 16:32:39.571 INFO:   [main] com.caweco.esra.microstream.startup.task.check.CheckAccessRuleData.lambda$ensureAvailability_AccessRuleData$0() Client AGCS SE..
+2025-08-29 16:32:39.571 INFO:   [main] com.caweco.esra.microstream.startup.task.check.CheckAccessRuleData.lambda$ensureAvailability_AccessRuleData$0() Client AGCS NA..
+2025-08-29 16:32:39.571 INFO:   [main] com.caweco.esra.microstream.startup.task.check.CheckAccessRuleData.lambda$ensureAvailability_AccessRuleData$0() Client DefaultClient..
+2025-08-29 16:32:39.571 INFO:   [main] com.caweco.esra.microstream.startup.task.check.CheckAccessRuleData.lambda$ensureAvailability_AccessRuleData$0() Client ESRA Training..
+2025-08-29 16:32:39.572 INFO:   [main] com.caweco.esra.microstream.startup.task.check.CheckSeaweb2ComplianceKeyData.ensureAvailability_Seaweb2ComplianceKeyData() Ensure that Seaweb2ComplianceKeyData are initialized...
+2025-08-29 16:32:39.643 INFO:   [main] org.quartz.impl.StdSchedulerFactory.instantiate() Using default implementation for ThreadExecutor
+2025-08-29 16:32:39.645 INFO:   [main] org.quartz.simpl.SimpleThreadPool.initialize() Job execution threads will use class loader of thread: main
+2025-08-29 16:32:39.733 INFO:   [main] org.quartz.core.SchedulerSignalerImpl.<init>() Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2025-08-29 16:32:39.734 INFO:   [main] org.quartz.core.QuartzScheduler.<init>() Quartz Scheduler v.2.3.2 created.
+2025-08-29 16:32:39.734 INFO:   [main] org.quartz.simpl.RAMJobStore.initialize() RAMJobStore initialized.
+2025-08-29 16:32:39.735 INFO:   [main] org.quartz.core.QuartzScheduler.initialize() Scheduler meta-data: Quartz Scheduler (v2.3.2) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+      Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+      NOT STARTED.
+      Currently in standby mode.
+      Number of jobs executed: 0
+      Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+      Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2025-08-29 16:32:39.735 INFO:   [main] org.quartz.impl.StdSchedulerFactory.instantiate() Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2025-08-29 16:32:39.735 INFO:   [main] org.quartz.impl.StdSchedulerFactory.instantiate() Quartz scheduler version: 2.3.2
+2025-08-29 16:32:39.744 INFO:   [main] org.quartz.core.QuartzScheduler.start() Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2025-08-29 16:32:39.746 INFO:   [Thread-4] com.caweco.esra.microstream.startup.task.migration.MigrationLuceneUpdate$LuceneIndexBuilder.run() ####### LuceneIndexBuilder - START #######
+2025-08-29 16:32:39.746 INFO:   [Thread-4] com.caweco.esra.microstream.startup.task.migration.MigrationLuceneUpdate$LuceneIndexBuilder.run() Lucene index storage path is /storage/gp3/data/lucene
+2025-08-29 16:32:39.751 INFO:   [Thread-4] com.caweco.esra.business.func.lucene.LuceneUtils.lambda$createIndices$1() #### Building Lucene index for client (China) AGCS SE client
+2025-08-29 16:32:39.958 INFO:   [Thread-4] com.caweco.esra.business.func.lucene.LuceneUtils.createIndex() Lucene index for client (China) AGCS SE client has been detected as empty, building index...
+2025-08-29 16:32:39.975 INFO:   [Thread-4] com.caweco.esra.business.func.lucene.LuceneUtils.lambda$createIndices$1() #### Building Lucene index for client AGCS SE
+2025-08-29 16:32:40.366 INFO:   [Thread-4] com.caweco.esra.business.func.lucene.LuceneUtils.lambda$createIndices$1() #### Building Lucene index for client AGCS NA
+2025-08-29 16:32:40.428 INFO:   [Thread-4] com.caweco.esra.business.func.lucene.LuceneUtils.lambda$createIndices$1() #### Building Lucene index for client DefaultClient
+2025-08-29 16:32:40.434 INFO:   [Thread-4] com.caweco.esra.business.func.lucene.LuceneUtils.lambda$createIndices$1() #### Building Lucene index for client ESRA Training
+2025-08-29 16:32:40.448 INFO:   [Thread-4] com.caweco.esra.business.func.lucene.ArchiveLuceneUtils.lambda$createIndices$5() #### Building Archive Lucene index for client (China) AGCS SE client
+2025-08-29 16:32:40.452 INFO:   [Thread-4] com.caweco.esra.business.func.lucene.ArchiveLuceneUtils.createIndex() Archive index for (China) AGCS SE client seems to have been empty. Building index...
+2025-08-29 16:32:41.526 INFO:   [Thread-4] com.caweco.esra.business.func.lucene.ArchiveLuceneUtils.createIndex() Building lucene archive index for client (China) AGCS SE client
+2025-08-29 16:32:41.527 INFO:   [Thread-4] com.caweco.esra.business.func.lucene.ArchiveLuceneUtils.lambda$createIndices$5() #### Building Archive Lucene index for client AGCS SE
+2025-08-29 16:32:41.662 INFO:   [Thread-4] com.caweco.esra.business.func.lucene.ArchiveLuceneUtils.lambda$createIndices$5() #### Building Archive Lucene index for client AGCS NA
+2025-08-29 16:32:41.668 INFO:   [Thread-4] com.caweco.esra.business.func.lucene.ArchiveLuceneUtils.lambda$createIndices$5() #### Building Archive Lucene index for client DefaultClient
+2025-08-29 16:32:41.675 INFO:   [Thread-4] com.caweco.esra.business.func.lucene.ArchiveLuceneUtils.lambda$createIndices$5() #### Building Archive Lucene index for client ESRA Training
+2025-08-29 16:32:41.681 INFO:   [Thread-4] com.caweco.esra.microstream.startup.task.migration.MigrationLuceneUpdate$LuceneIndexBuilder.run() ####### Lucene Index Builder - DONE #######
+2025-08-29 16:50:03.881 INFO:   [default-nioEventLoopGroup-1-5] com.caweco.esra.storageserver.controller.AccessControlController.updateAutoAssignment() ## User auto-assignment. User extern.raji_venkat@allianz.com has access and should be assigned to Clients AGCS SE.
+2025-08-29 16:50:03.974 INFO:   [default-nioEventLoopGroup-1-5] com.caweco.esra.storageserver.controller.UserController.getUserRoles() Collected roles for users extern.raji_venkat@allianz.com
+2025-08-29 16:50:29.456 INFO:   [default-nioEventLoopGroup-1-2] com.caweco.esra.storageserver.controller.ClientController.getScreeningBaseData() Enter into getScreeningBaseDataMoreParameters [clientUuid=75f083b1-c55d-436b-8f02-aae5139ec33b, limit=1, offset=0, lucene=f3017818-5928-4b02-84dd-b9af7e363937, parameters={offset=0, limit=1, sort=screening.screeningDate,DESC, lucene=f3017818-5928-4b02-84dd-b9af7e363937}, client=com.caweco.esra.entities.Client@2c31a923]
+2025-08-29 16:50:29.463 INFO:   [default-nioEventLoopGroup-1-2] com.caweco.esra.storageserver.controller.ClientController.getScreeningBaseData() size of getScreenings List1
+2025-08-29 16:50:29.463 INFO:   [default-nioEventLoopGroup-1-2] com.caweco.esra.storageserver.controller.ClientController.getScreeningBaseData() value of luceneParts[f3017818-5928-4b02-84dd-b9af7e363937]
+2025-08-29 16:50:29.463 INFO:   [default-nioEventLoopGroup-1-2] com.caweco.esra.storageserver.controller.ClientController.getScreeningBaseData() Inside the luceneParts check not null
+2025-08-29 16:50:29.560 ERROR:  [default-nioEventLoopGroup-1-2] io.micronaut.http.server.RouteExecutor.logException() Unexpected error occurred: Cannot invoke "com.caweco.esra.entities.core.SearchEntryGsss.getGsssMatchResults()" because "se" is null: java.lang.NullPointerException: Cannot invoke "com.caweco.esra.entities.core.SearchEntryGsss.getGsssMatchResults()" because "se" is null
+        at com.caweco.esra.business.func.lucene.LuceneScreeningUtil.findTextPartsInScreening_matches(LuceneScreeningUtil.java:137)
+        at com.caweco.esra.business.func.lucene.LuceneScreeningUtil.convertToEnhancedBase(LuceneScreeningUtil.java:76)
+        at com.caweco.esra.storageserver.controller.ClientController.lambda$getScreeningBaseData$4(ClientController.java:691)
+        at java.base/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+        at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+        at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+        at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+        at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)
+        at java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+        at java.base/java.util.stream.ReferencePipeline.collect(Unknown Source)
+        at com.caweco.esra.storageserver.controller.ClientController.getScreeningBaseData(ClientController.java:691)
+        at com.caweco.esra.storageserver.controller.$ClientController$Definition$Exec.dispatch(Unknown Source)
+        at io.micronaut.context.AbstractExecutableMethodsDefinition$DispatchedExecutableMethod.invoke(AbstractExecutableMethodsDefinition.java:371)
+        at io.micronaut.context.DefaultBeanContext$4.invoke(DefaultBeanContext.java:594)
+        at io.micronaut.web.router.AbstractRouteMatch.execute(AbstractRouteMatch.java:303)
+        at io.micronaut.web.router.RouteMatch.execute(RouteMatch.java:111)
+        at io.micronaut.http.context.ServerRequestContext.with(ServerRequestContext.java:103)
+        at io.micronaut.http.server.RouteExecutor.lambda$executeRoute$14(RouteExecutor.java:659)
+        at reactor.core.publisher.FluxDeferContextual.subscribe(FluxDeferContextual.java:49)
+        at reactor.core.publisher.Flux.subscribe(Flux.java:8660)
+        at reactor.core.publisher.FluxFlatMap$FlatMapMain.onNext(FluxFlatMap.java:426)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onNext(ReactorSubscriber.java:57)
+        at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2508)
+        at reactor.core.publisher.FluxFlatMap$FlatMapMain.onSubscribe(FluxFlatMap.java:371)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onSubscribe(ReactorSubscriber.java:50)
+        at reactor.core.publisher.FluxJust.subscribe(FluxJust.java:68)
+        at reactor.core.publisher.Flux.subscribe(Flux.java:8660)
+        at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onNext(MonoFlatMapMany.java:195)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onNext(ReactorSubscriber.java:57)
+        at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onNext(ReactorSubscriber.java:57)
+        at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.innerNext(FluxConcatMapNoPrefetch.java:258)
+        at reactor.core.publisher.FluxConcatMap$ConcatMapInner.onNext(FluxConcatMap.java:863)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onNext(ReactorSubscriber.java:57)
+        at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onNext(ReactorSubscriber.java:57)
+        at reactor.core.publisher.FluxFilter$FilterSubscriber.onNext(FluxFilter.java:113)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onNext(ReactorSubscriber.java:57)
+        at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onNext(ReactorSubscriber.java:57)
+        at reactor.core.publisher.FluxHide$SuppressFuseableSubscriber.onNext(FluxHide.java:137)
+        at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2508)
+        at reactor.core.publisher.FluxHide$SuppressFuseableSubscriber.request(FluxHide.java:152)
+        at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.request(FluxDefaultIfEmpty.java:98)
+        at reactor.core.publisher.FluxFilter$FilterSubscriber.request(FluxFilter.java:186)
+        at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.request(MonoPeekTerminal.java:139)
+        at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.set(Operators.java:2304)
+        at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onSubscribe(Operators.java:2178)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onSubscribe(ReactorSubscriber.java:50)
+        at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onSubscribe(MonoPeekTerminal.java:152)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onSubscribe(ReactorSubscriber.java:50)
+        at reactor.core.publisher.FluxFilter$FilterSubscriber.onSubscribe(FluxFilter.java:85)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onSubscribe(ReactorSubscriber.java:50)
+        at reactor.core.publisher.Operators$BaseFluxToMonoOperator.onSubscribe(Operators.java:1988)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onSubscribe(ReactorSubscriber.java:50)
+        at reactor.core.publisher.FluxHide$SuppressFuseableSubscriber.onSubscribe(FluxHide.java:122)
+        at reactor.core.publisher.MonoJust.subscribe(MonoJust.java:55)
+        at reactor.core.publisher.Mono.subscribe(Mono.java:4444)
+        at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onNext(FluxConcatMapNoPrefetch.java:206)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onNext(ReactorSubscriber.java:57)
+        at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:272)
+        at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:230)
+        at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.innerComplete(FluxConcatMapNoPrefetch.java:274)
+        at reactor.core.publisher.FluxConcatMap$ConcatMapInner.onComplete(FluxConcatMap.java:887)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onComplete(ReactorSubscriber.java:71)
+        at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onComplete(MonoPeekTerminal.java:299)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onComplete(ReactorSubscriber.java:71)
+        at reactor.core.publisher.FluxFilter$FilterSubscriber.onComplete(FluxFilter.java:166)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onComplete(ReactorSubscriber.java:71)
+        at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onComplete(FluxDefaultIfEmpty.java:139)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onComplete(ReactorSubscriber.java:71)
+        at reactor.core.publisher.FluxHide$SuppressFuseableSubscriber.onComplete(FluxHide.java:147)
+        at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2510)
+        at reactor.core.publisher.FluxHide$SuppressFuseableSubscriber.request(FluxHide.java:152)
+        at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.request(FluxDefaultIfEmpty.java:98)
+        at reactor.core.publisher.FluxFilter$FilterSubscriber.request(FluxFilter.java:186)
+        at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.request(MonoPeekTerminal.java:139)
+        at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.request(Operators.java:2268)
+        at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.request(FluxConcatMapNoPrefetch.java:338)
+        at reactor.core.publisher.MonoNext$NextSubscriber.request(MonoNext.java:108)
+        at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onSubscribe(MonoFlatMapMany.java:141)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onSubscribe(ReactorSubscriber.java:50)
+        at reactor.core.publisher.MonoNext$NextSubscriber.onSubscribe(MonoNext.java:70)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onSubscribe(ReactorSubscriber.java:50)
+        at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onSubscribe(FluxConcatMapNoPrefetch.java:164)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onSubscribe(ReactorSubscriber.java:50)
+        at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:165)
+        at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:87)
+        at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+        at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:165)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onNext(ReactorSubscriber.java:57)
+        at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onNext(ReactorSubscriber.java:57)
+        at reactor.core.publisher.FluxFlatMap$FlatMapMain.tryEmit(FluxFlatMap.java:543)
+        at reactor.core.publisher.FluxFlatMap$FlatMapInner.onNext(FluxFlatMap.java:984)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onNext(ReactorSubscriber.java:57)
+        at reactor.core.publisher.FluxSwitchMapNoPrefetch$SwitchMapInner.onNext(FluxSwitchMapNoPrefetch.java:407)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onNext(ReactorSubscriber.java:57)
+        at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2508)
+        at reactor.core.publisher.FluxSwitchMapNoPrefetch$SwitchMapInner.onSubscribe(FluxSwitchMapNoPrefetch.java:377)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onSubscribe(ReactorSubscriber.java:50)
+        at reactor.core.publisher.FluxJust.subscribe(FluxJust.java:68)
+        at reactor.core.publisher.Flux.subscribe(Flux.java:8660)
+        at reactor.core.publisher.FluxSwitchMapNoPrefetch$SwitchMapMain.subscribeInner(FluxSwitchMapNoPrefetch.java:218)
+        at reactor.core.publisher.FluxSwitchMapNoPrefetch$SwitchMapMain.onNext(FluxSwitchMapNoPrefetch.java:164)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onNext(ReactorSubscriber.java:57)
+        at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onNext(ReactorSubscriber.java:57)
+        at reactor.core.publisher.FluxLimitRequest$FluxLimitRequestSubscriber.onNext(FluxLimitRequest.java:99)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onNext(ReactorSubscriber.java:57)
+        at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onNext(ReactorSubscriber.java:57)
+        at reactor.core.publisher.FluxSwitchMapNoPrefetch$SwitchMapInner.onNext(FluxSwitchMapNoPrefetch.java:407)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onNext(ReactorSubscriber.java:57)
+        at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2508)
+        at reactor.core.publisher.FluxSwitchMapNoPrefetch$SwitchMapInner.onSubscribe(FluxSwitchMapNoPrefetch.java:377)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onSubscribe(ReactorSubscriber.java:50)
+        at reactor.core.publisher.FluxJust.subscribe(FluxJust.java:68)
+        at reactor.core.publisher.Flux.subscribe(Flux.java:8660)
+        at reactor.core.publisher.FluxSwitchMapNoPrefetch$SwitchMapMain.subscribeInner(FluxSwitchMapNoPrefetch.java:218)
+        at reactor.core.publisher.FluxSwitchMapNoPrefetch$SwitchMapMain.onNext(FluxSwitchMapNoPrefetch.java:164)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onNext(ReactorSubscriber.java:57)
+        at reactor.core.publisher.FluxCreate$BufferAsyncSink.drain(FluxCreate.java:814)
+        at reactor.core.publisher.FluxCreate$BufferAsyncSink.next(FluxCreate.java:739)
+        at reactor.core.publisher.FluxCreate$SerializedFluxSink.next(FluxCreate.java:161)
+        at com.caweco.esra.storageserver.provider.AuthenticationProviderUserPassword.lambda$authenticate$0(AuthenticationProviderUserPassword.java:29)
+        at reactor.core.publisher.FluxCreate.subscribe(FluxCreate.java:95)
+        at reactor.core.publisher.Flux.subscribe(Flux.java:8660)
+        at reactor.core.publisher.FluxFlatMap$FlatMapMain.onNext(FluxFlatMap.java:426)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onNext(ReactorSubscriber.java:57)
+        at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:272)
+        at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:230)
+        at reactor.core.publisher.FluxFlatMap$FlatMapMain.onSubscribe(FluxFlatMap.java:371)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onSubscribe(ReactorSubscriber.java:50)
+        at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:165)
+        at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:87)
+        at reactor.core.publisher.Flux.subscribe(Flux.java:8660)
+        at io.micronaut.http.server.netty.RoutingInBoundHandler.handleRouteMatch(RoutingInBoundHandler.java:601)
+        at io.micronaut.http.server.netty.RoutingInBoundHandler.channelRead0(RoutingInBoundHandler.java:457)
+        at io.micronaut.http.server.netty.RoutingInBoundHandler.channelRead0(RoutingInBoundHandler.java:147)
+        at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+        at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+        at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:102)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+        at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+        at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+        at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+        at io.micronaut.http.netty.stream.HttpStreamsHandler.channelRead(HttpStreamsHandler.java:225)
+        at io.micronaut.http.netty.stream.HttpStreamsServerHandler.channelRead(HttpStreamsServerHandler.java:134)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+        at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+        at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:93)
+        at io.netty.handler.codec.http.websocketx.extensions.WebSocketServerExtensionHandler.onHttpRequestChannelRead(WebSocketServerExtensionHandler.java:160)
+        at io.netty.handler.codec.http.websocketx.extensions.WebSocketServerExtensionHandler.channelRead(WebSocketServerExtensionHandler.java:83)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+        at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+        at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+        at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+        at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+        at io.netty.handler.codec.MessageToMessageCodec.channelRead(MessageToMessageCodec.java:111)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+        at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+        at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:93)
+        at io.netty.handler.codec.http.HttpServerKeepAliveHandler.channelRead(HttpServerKeepAliveHandler.java:64)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+        at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+        at io.netty.handler.flow.FlowControlHandler.dequeue(FlowControlHandler.java:202)
+        at io.netty.handler.flow.FlowControlHandler.channelRead(FlowControlHandler.java:164)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+        at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+        at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+        at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+        at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+        at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+        at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+        at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:289)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+        at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+        at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+        at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+        at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+        at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+        at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+        at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+        at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+        at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+        at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+        at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+        at java.base/java.lang.Thread.run(Unknown Source)
+2025-08-29 16:50:36.777 INFO:   [default-nioEventLoopGroup-1-5] com.caweco.esra.storageserver.controller.AccessControlController.updateAutoAssignment() ## User auto-assignment. User extern.raji_venkat@allianz.com has access and should be assigned to Clients AGCS SE.
+2025-08-29 16:50:36.829 INFO:   [default-nioEventLoopGroup-1-4] com.caweco.esra.storageserver.controller.UserController.getUserRoles() Collected roles for users extern.raji_venkat@allianz.com
+2025-08-29 16:50:46.310 INFO:   [default-nioEventLoopGroup-1-4] com.caweco.esra.storageserver.controller.ClientController.getScreeningBaseData() Enter into getScreeningBaseDataMoreParameters [clientUuid=75f083b1-c55d-436b-8f02-aae5139ec33b, limit=1, offset=0, lucene=f3017818-5928-4b02-84dd-b9af7e363937, parameters={offset=0, limit=1, sort=screening.screeningDate,DESC, lucene=f3017818-5928-4b02-84dd-b9af7e363937}, client=com.caweco.esra.entities.Client@2c31a923]
+2025-08-29 16:50:46.310 INFO:   [default-nioEventLoopGroup-1-4] com.caweco.esra.storageserver.controller.ClientController.getScreeningBaseData() size of getScreenings List1
+2025-08-29 16:50:46.310 INFO:   [default-nioEventLoopGroup-1-4] com.caweco.esra.storageserver.controller.ClientController.getScreeningBaseData() value of luceneParts[f3017818-5928-4b02-84dd-b9af7e363937]
+2025-08-29 16:50:46.310 INFO:   [default-nioEventLoopGroup-1-4] com.caweco.esra.storageserver.controller.ClientController.getScreeningBaseData() Inside the luceneParts check not null
+2025-08-29 16:50:46.328 ERROR:  [default-nioEventLoopGroup-1-4] io.micronaut.http.server.RouteExecutor.logException() Unexpected error occurred: Cannot invoke "com.caweco.esra.entities.core.SearchEntryGsss.getGsssMatchResults()" because "se" is null: java.lang.NullPointerException: Cannot invoke "com.caweco.esra.entities.core.SearchEntryGsss.getGsssMatchResults()" because "se" is null
+        at com.caweco.esra.business.func.lucene.LuceneScreeningUtil.findTextPartsInScreening_matches(LuceneScreeningUtil.java:137)
+        at com.caweco.esra.business.func.lucene.LuceneScreeningUtil.convertToEnhancedBase(LuceneScreeningUtil.java:76)
+        at com.caweco.esra.storageserver.controller.ClientController.lambda$getScreeningBaseData$4(ClientController.java:691)
+        at java.base/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+        at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+        at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+        at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+        at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)
+        at java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+        at java.base/java.util.stream.ReferencePipeline.collect(Unknown Source)
+        at com.caweco.esra.storageserver.controller.ClientController.getScreeningBaseData(ClientController.java:691)
+        at com.caweco.esra.storageserver.controller.$ClientController$Definition$Exec.dispatch(Unknown Source)
+        at io.micronaut.context.AbstractExecutableMethodsDefinition$DispatchedExecutableMethod.invoke(AbstractExecutableMethodsDefinition.java:371)
+        at io.micronaut.context.DefaultBeanContext$4.invoke(DefaultBeanContext.java:594)
+        at io.micronaut.web.router.AbstractRouteMatch.execute(AbstractRouteMatch.java:303)
+        at io.micronaut.web.router.RouteMatch.execute(RouteMatch.java:111)
+        at io.micronaut.http.context.ServerRequestContext.with(ServerRequestContext.java:103)
+        at io.micronaut.http.server.RouteExecutor.lambda$executeRoute$14(RouteExecutor.java:659)
+        at reactor.core.publisher.FluxDeferContextual.subscribe(FluxDeferContextual.java:49)
+        at reactor.core.publisher.Flux.subscribe(Flux.java:8660)
+        at reactor.core.publisher.FluxFlatMap$FlatMapMain.onNext(FluxFlatMap.java:426)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onNext(ReactorSubscriber.java:57)
+        at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2508)
+        at reactor.core.publisher.FluxFlatMap$FlatMapMain.onSubscribe(FluxFlatMap.java:371)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onSubscribe(ReactorSubscriber.java:50)
+        at reactor.core.publisher.FluxJust.subscribe(FluxJust.java:68)
+        at reactor.core.publisher.Flux.subscribe(Flux.java:8660)
+        at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onNext(MonoFlatMapMany.java:195)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onNext(ReactorSubscriber.java:57)
+        at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onNext(ReactorSubscriber.java:57)
+        at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.innerNext(FluxConcatMapNoPrefetch.java:258)
+        at reactor.core.publisher.FluxConcatMap$ConcatMapInner.onNext(FluxConcatMap.java:863)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onNext(ReactorSubscriber.java:57)
+        at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onNext(ReactorSubscriber.java:57)
+        at reactor.core.publisher.FluxFilter$FilterSubscriber.onNext(FluxFilter.java:113)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onNext(ReactorSubscriber.java:57)
+        at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onNext(ReactorSubscriber.java:57)
+        at reactor.core.publisher.FluxHide$SuppressFuseableSubscriber.onNext(FluxHide.java:137)
+        at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2508)
+        at reactor.core.publisher.FluxHide$SuppressFuseableSubscriber.request(FluxHide.java:152)
+        at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.request(FluxDefaultIfEmpty.java:98)
+        at reactor.core.publisher.FluxFilter$FilterSubscriber.request(FluxFilter.java:186)
+        at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.request(MonoPeekTerminal.java:139)
+        at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.set(Operators.java:2304)
+        at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onSubscribe(Operators.java:2178)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onSubscribe(ReactorSubscriber.java:50)
+        at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onSubscribe(MonoPeekTerminal.java:152)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onSubscribe(ReactorSubscriber.java:50)
+        at reactor.core.publisher.FluxFilter$FilterSubscriber.onSubscribe(FluxFilter.java:85)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onSubscribe(ReactorSubscriber.java:50)
+        at reactor.core.publisher.Operators$BaseFluxToMonoOperator.onSubscribe(Operators.java:1988)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onSubscribe(ReactorSubscriber.java:50)
+        at reactor.core.publisher.FluxHide$SuppressFuseableSubscriber.onSubscribe(FluxHide.java:122)
+        at reactor.core.publisher.MonoJust.subscribe(MonoJust.java:55)
+        at reactor.core.publisher.Mono.subscribe(Mono.java:4444)
+        at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onNext(FluxConcatMapNoPrefetch.java:206)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onNext(ReactorSubscriber.java:57)
+        at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:272)
+        at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:230)
+        at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.innerComplete(FluxConcatMapNoPrefetch.java:274)
+        at reactor.core.publisher.FluxConcatMap$ConcatMapInner.onComplete(FluxConcatMap.java:887)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onComplete(ReactorSubscriber.java:71)
+        at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onComplete(MonoPeekTerminal.java:299)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onComplete(ReactorSubscriber.java:71)
+        at reactor.core.publisher.FluxFilter$FilterSubscriber.onComplete(FluxFilter.java:166)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onComplete(ReactorSubscriber.java:71)
+        at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onComplete(FluxDefaultIfEmpty.java:139)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onComplete(ReactorSubscriber.java:71)
+        at reactor.core.publisher.FluxHide$SuppressFuseableSubscriber.onComplete(FluxHide.java:147)
+        at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2510)
+        at reactor.core.publisher.FluxHide$SuppressFuseableSubscriber.request(FluxHide.java:152)
+        at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.request(FluxDefaultIfEmpty.java:98)
+        at reactor.core.publisher.FluxFilter$FilterSubscriber.request(FluxFilter.java:186)
+        at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.request(MonoPeekTerminal.java:139)
+        at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.request(Operators.java:2268)
+        at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.request(FluxConcatMapNoPrefetch.java:338)
+        at reactor.core.publisher.MonoNext$NextSubscriber.request(MonoNext.java:108)
+        at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onSubscribe(MonoFlatMapMany.java:141)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onSubscribe(ReactorSubscriber.java:50)
+        at reactor.core.publisher.MonoNext$NextSubscriber.onSubscribe(MonoNext.java:70)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onSubscribe(ReactorSubscriber.java:50)
+        at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onSubscribe(FluxConcatMapNoPrefetch.java:164)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onSubscribe(ReactorSubscriber.java:50)
+        at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:165)
+        at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:87)
+        at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+        at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:165)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onNext(ReactorSubscriber.java:57)
+        at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onNext(ReactorSubscriber.java:57)
+        at reactor.core.publisher.FluxFlatMap$FlatMapMain.tryEmit(FluxFlatMap.java:543)
+        at reactor.core.publisher.FluxFlatMap$FlatMapInner.onNext(FluxFlatMap.java:984)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onNext(ReactorSubscriber.java:57)
+        at reactor.core.publisher.FluxSwitchMapNoPrefetch$SwitchMapInner.onNext(FluxSwitchMapNoPrefetch.java:407)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onNext(ReactorSubscriber.java:57)
+        at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2508)
+        at reactor.core.publisher.FluxSwitchMapNoPrefetch$SwitchMapInner.onSubscribe(FluxSwitchMapNoPrefetch.java:377)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onSubscribe(ReactorSubscriber.java:50)
+        at reactor.core.publisher.FluxJust.subscribe(FluxJust.java:68)
+        at reactor.core.publisher.Flux.subscribe(Flux.java:8660)
+        at reactor.core.publisher.FluxSwitchMapNoPrefetch$SwitchMapMain.subscribeInner(FluxSwitchMapNoPrefetch.java:218)
+        at reactor.core.publisher.FluxSwitchMapNoPrefetch$SwitchMapMain.onNext(FluxSwitchMapNoPrefetch.java:164)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onNext(ReactorSubscriber.java:57)
+        at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onNext(ReactorSubscriber.java:57)
+        at reactor.core.publisher.FluxLimitRequest$FluxLimitRequestSubscriber.onNext(FluxLimitRequest.java:99)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onNext(ReactorSubscriber.java:57)
+        at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onNext(ReactorSubscriber.java:57)
+        at reactor.core.publisher.FluxSwitchMapNoPrefetch$SwitchMapInner.onNext(FluxSwitchMapNoPrefetch.java:407)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onNext(ReactorSubscriber.java:57)
+        at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2508)
+        at reactor.core.publisher.FluxSwitchMapNoPrefetch$SwitchMapInner.onSubscribe(FluxSwitchMapNoPrefetch.java:377)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onSubscribe(ReactorSubscriber.java:50)
+        at reactor.core.publisher.FluxJust.subscribe(FluxJust.java:68)
+        at reactor.core.publisher.Flux.subscribe(Flux.java:8660)
+        at reactor.core.publisher.FluxSwitchMapNoPrefetch$SwitchMapMain.subscribeInner(FluxSwitchMapNoPrefetch.java:218)
+        at reactor.core.publisher.FluxSwitchMapNoPrefetch$SwitchMapMain.onNext(FluxSwitchMapNoPrefetch.java:164)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onNext(ReactorSubscriber.java:57)
+        at reactor.core.publisher.FluxCreate$BufferAsyncSink.drain(FluxCreate.java:814)
+        at reactor.core.publisher.FluxCreate$BufferAsyncSink.next(FluxCreate.java:739)
+        at reactor.core.publisher.FluxCreate$SerializedFluxSink.next(FluxCreate.java:161)
+        at com.caweco.esra.storageserver.provider.AuthenticationProviderUserPassword.lambda$authenticate$0(AuthenticationProviderUserPassword.java:29)
+        at reactor.core.publisher.FluxCreate.subscribe(FluxCreate.java:95)
+        at reactor.core.publisher.Flux.subscribe(Flux.java:8660)
+        at reactor.core.publisher.FluxFlatMap$FlatMapMain.onNext(FluxFlatMap.java:426)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onNext(ReactorSubscriber.java:57)
+        at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:272)
+        at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:230)
+        at reactor.core.publisher.FluxFlatMap$FlatMapMain.onSubscribe(FluxFlatMap.java:371)
+        at io.micronaut.reactive.reactor.instrument.ReactorSubscriber.onSubscribe(ReactorSubscriber.java:50)
+        at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:165)
+        at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:87)
+        at reactor.core.publisher.Flux.subscribe(Flux.java:8660)
+        at io.micronaut.http.server.netty.RoutingInBoundHandler.handleRouteMatch(RoutingInBoundHandler.java:601)
+        at io.micronaut.http.server.netty.RoutingInBoundHandler.channelRead0(RoutingInBoundHandler.java:457)
+        at io.micronaut.http.server.netty.RoutingInBoundHandler.channelRead0(RoutingInBoundHandler.java:147)
+        at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+        at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+        at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:102)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+        at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+        at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+        at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+        at io.micronaut.http.netty.stream.HttpStreamsHandler.channelRead(HttpStreamsHandler.java:225)
+        at io.micronaut.http.netty.stream.HttpStreamsServerHandler.channelRead(HttpStreamsServerHandler.java:134)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+        at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+        at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:93)
+        at io.netty.handler.codec.http.websocketx.extensions.WebSocketServerExtensionHandler.onHttpRequestChannelRead(WebSocketServerExtensionHandler.java:160)
+        at io.netty.handler.codec.http.websocketx.extensions.WebSocketServerExtensionHandler.channelRead(WebSocketServerExtensionHandler.java:83)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+        at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+        at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+        at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+        at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+        at io.netty.handler.codec.MessageToMessageCodec.channelRead(MessageToMessageCodec.java:111)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+        at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+        at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:93)
+        at io.netty.handler.codec.http.HttpServerKeepAliveHandler.channelRead(HttpServerKeepAliveHandler.java:64)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+        at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+        at io.netty.handler.flow.FlowControlHandler.dequeue(FlowControlHandler.java:202)
+        at io.netty.handler.flow.FlowControlHandler.channelRead(FlowControlHandler.java:164)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+        at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+        at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+        at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+        at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+        at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+        at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+        at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:289)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+        at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+        at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+        at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+        at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+        at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+        at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+        at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+        at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+        at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+        at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+        at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+        at java.base/java.lang.Thread.run(Unknown Source)
